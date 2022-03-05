@@ -15,7 +15,9 @@
     7. [Pointers]()
 3. Embedded C ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 
+---
 ### **Second Term** ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
+---
 ### **Third Term** ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 
 ---
