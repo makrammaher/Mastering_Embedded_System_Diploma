@@ -3,7 +3,7 @@
 [![Embedded system online diploma](https://drive.google.com/uc?export=view&id=1bu5WQtqde-93DNo7SQksjUkoxHThyU43)](https://www.learn-in-depth.com/online-diploma/makrammaher@hotmail.com)
 
 ## **Contents**
-### **First Term** ![image](https://progress-bar.dev/75/?title=In_Progress&color=daa520)
+### **First Term** ![image](https://progress-bar.dev/60/?title=In_Progress&color=daa520)
 1. Introduction ![image](https://progress-bar.dev/100/?title=Done)
 2.  [C Programming](01_C_Programming) [![image](https://progress-bar.dev/75/?title=In_Progress&color=daa520)](01_C_Programming)
     1. [Basics](01_C_Programming/01_C_Basic)
