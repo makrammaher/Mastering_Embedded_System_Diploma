@@ -5,7 +5,7 @@
 ## Contents
 ### First Term ![image](https://progress-bar.dev/75/?title=In_Progress&color=daa520)
 - Introduction ![image](https://progress-bar.dev/100/?title=Done)
-- [2- C Programming](01_C_Programming) [![image](https://progress-bar.dev/75/?title=In_Progress&color=daa520)](01_C_Programming)
+- [C Programming](01_C_Programming) [![image](https://progress-bar.dev/75/?title=In_Progress&color=daa520)](01_C_Programming)
   - [Basics](01_C_Programming/01_C_Basic)
   - [Arrays & Strings](01_C_Programming/02_C_Array_Strings)
   - [Functions](01_C_Programming/03_C_Functions)
@@ -13,16 +13,20 @@
   - [Structure & Enumeration & Union](01_C_Programming/05_C_Struct_Enum_Union)
   - [Pre-processor directives]()
   - [Pointers]()
-- Embedded C
+- Embedded C ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 
+### Second Term <tab> ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
+### Third Term <tab> ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 
+---
+## Progress
+Term |Progress
+-|-
+First Term|![image](https://progress-bar.dev/75/?title=In_Progress&color=daa520)
+Second Term|![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
+Third Term|![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
+---
 
-## Process
-|Unit|Process|
-|-|-|
-|First Term|![image](https://progress-bar.dev/75/?title=Done)
-|[x] asd|sadas|
-| - kaos| asdas|
 
 ## [Certificate](https://www.learn-in-depth.com/online-diploma/makrammaher@hotmail.com)
 
