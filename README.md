@@ -13,7 +13,7 @@
     5. [Structure & Enumeration & Union](01_C_Programming/05_C_Struct_Enum_Union)
     6. [Pre-processor directives](01_C_Programming/06_C_Preprocessor_Directive)
     7. [Pointers](01_C_Programming/07_C_Pointers)
-3. Embedded C ![image](https://progress-bar.dev/0/?title=In_Progress&color=daa520)
+3. Embedded C ![image](https://progress-bar.dev/2/?title=In_Progress&color=daa520)
 4. System Architecture ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 5. First Term Project ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 
