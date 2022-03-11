@@ -3,9 +3,9 @@
 [![Embedded system online diploma](https://drive.google.com/uc?export=view&id=1bu5WQtqde-93DNo7SQksjUkoxHThyU43)](https://www.learn-in-depth.com/online-diploma/makrammaher@hotmail.com)
 
 ## **Contents**
-### **First Term** ![image](https://progress-bar.dev/65/?title=In_Progress&color=daa520)
+### **First Term** ![image](https://progress-bar.dev/70/?title=In_Progress&color=daa520)
 1. Introduction ![image](https://progress-bar.dev/100/?title=Done)
-2.  [C Programming](01_C_Programming) [![image](https://progress-bar.dev/90/?title=In_Progress&color=daa520)](01_C_Programming)
+2.  [C Programming](01_C_Programming) [![image](https://progress-bar.dev/100/?title=Done)](01_C_Programming)
     1. [Basics](01_C_Programming/01_C_Basic)
     2. [Arrays & Strings](01_C_Programming/02_C_Array_Strings)
     3. [Functions](01_C_Programming/03_C_Functions)
@@ -13,7 +13,7 @@
     5. [Structure & Enumeration & Union](01_C_Programming/05_C_Struct_Enum_Union)
     6. [Pre-processor directives](01_C_Programming/06_C_Preprocessor_Directive)
     7. [Pointers](01_C_Programming/07_C_Pointers)
-3. Embedded C ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
+3. Embedded C ![image](https://progress-bar.dev/0/?title=In_Progress&color=daa520)
 4. System Architecture ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 5. First Term Project ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 
@@ -27,7 +27,7 @@
 [![Embedded system online diploma](https://drive.google.com/uc?export=view&id=1ADq4hpmE2mUrVwlR0zGXrCsd3QMgnB3a)](https://www.learn-in-depth.com/online-diploma/makrammaher@hotmail.com)
 **Term** |**Progress**
 -|-
-**First Term**|![image](https://progress-bar.dev/65/?title=In_Progress&color=daa520)
+**First Term**|![image](https://progress-bar.dev/70/?title=In_Progress&color=daa520)
 **Second Term**|![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 **Third Term**|![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 
