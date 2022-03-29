@@ -30,12 +30,32 @@ int main(void)
 
 int uniqueNumber(int array[], unsigned int size)
 {
-	unsigned int result = 0;
-	unsigned int i = 0;
-	for(i = 0;i<size;i++)
-	{
-		result^=array[i];
-	}
+	int result;
+	int i, index;
 
+	for(i=0;i<size*size;i++)
+	{
+		if(i%size == 0)
+		{
+			index = i/size;
+			result = array[index];
+			//i+=index;
+		}
+		else
+		{
+			 if(i%size != index && array[i%size] == array[index])
+			 {
+				 //skip the rest
+				 i = (index+1)*size - 1;
+			 }
+			 else
+			 {
+				 if(i%size == size - 1)
+				 {
+					 break;
+				 }
+			 }
+		}
+	}
 	return result;
 }

@@ -1,0 +1,3 @@
+int*(*(*p)(void *(*(*)())[],int(*(*)[])(int*,void *(*)[],float *(*(*)())[])))[]
+
+declare p as pointer to function (pointer to function returning pointer to array of pointer to void, pointer to array of pointer to function (pointer to int, pointer to array of pointer to void, pointer to function returning pointer to array of pointer to float) returning int) returning pointer to array of pointer to int
