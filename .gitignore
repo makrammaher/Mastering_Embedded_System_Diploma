@@ -54,3 +54,5 @@ dkms.conf
 #My Ignores
 */.cproject
 *.i
+*.s
+*ps1
