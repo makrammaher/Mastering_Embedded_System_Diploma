@@ -1,6 +1,6 @@
 # [Mastering Embedded System Online Diploma](https://www.learn-in-depth.com)
 
-[![Embedded system online diploma](https://drive.google.com/uc?export=view&id=1bu5WQtqde-93DNo7SQksjUkoxHThyU43)](https://www.learn-in-depth.com/online-diploma/makrammaher@hotmail.com)
+[<img src="/99_Images/Learn_in_depth.jpg" >](https://www.learn-in-depth.com/online-diploma/makrammaher@hotmail.com)
 
 ## **Contents**
 ### **First Term** ![image](https://progress-bar.dev/70/?title=In_Progress&color=daa520)
@@ -24,7 +24,7 @@
 
 ---
 ## **Progress**
-[![Embedded system online diploma](https://drive.google.com/uc?export=view&id=1ADq4hpmE2mUrVwlR0zGXrCsd3QMgnB3a)](https://www.learn-in-depth.com/online-diploma/makrammaher@hotmail.com)
+[<img src="/99_Images/Progress.jpg" >](https://www.learn-in-depth.com/online-diploma/makrammaher@hotmail.com)
 **Term** |**Progress**
 -|-
 **First Term**|![image](https://progress-bar.dev/70/?title=In_Progress&color=daa520)
