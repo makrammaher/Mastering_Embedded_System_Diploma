@@ -38,3 +38,5 @@
 ## [**Certificate**](https://www.learn-in-depth.com/online-diploma/makrammaher@hotmail.com)
 
 [![image](https://drive.google.com/uc?export=view&id=1w231zbUhbEAtuEjlBpZFKCdJlEJF3XD_)](https://www.learn-in-depth.com/online-diploma/makrammaher@hotmail.com)
+
+<img src="/01_C_Programming/07_C_Pointers/05_Pointer_And_Structure/05_Pointer_And_Structure.jpg" >
