@@ -27,7 +27,6 @@ arm-none-eabi-objdump.exe -h uart.o
 ```
 arm-none-eabi-objdump.exe -h app.o
 ```
-- Powershell Output
 <img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/003.jpg" >
 <img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/004.jpg" >
 
@@ -48,7 +47,6 @@ arm-none-eabi-objdump.exe -h uart.o
 ```
 arm-none-eabi-objdump.exe -h app.o
 ```
-- Powershell Output
 <img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/005.jpg" >
 
 ---
@@ -61,7 +59,6 @@ arm-none-eabi-objdump.exe -s uart.o
 ```
 arm-none-eabi-objdump.exe -s app.o
 ```
-- Powershell Output
 <img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/006.jpg" >
 
 ---
@@ -87,7 +84,6 @@ arm-none-eabi-as.exe -mcpu=arm926ej-s startup.s -o startup.o
 ```
 arm-none-eabi-objdump.exe -h startup.o
 ```
-- Powershell Output
 <img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/009.jpg" >
 
 ---
@@ -107,10 +103,36 @@ arm-none-eabi-ld.exe -T linker_script.ld -Map out.map startup.o app.o uart.o -o 
 
 <img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/011.jpg" >
 
+---
+
 ## Showing information about executable file .elf
 
-- Powershell commands of show all information using readelf
+Powershell commands of show all information using readelf of learn-in-depth.elf
 ```
 arm-none-eabi-readelf.exe -a learn-in-depth.elf
 ```
 <img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/012.jpg" >
+
+Powershell commands of show sections header of learn-in-depth.elf
+```
+arm-none-eabi-objdump.exe -h learn-in-depth.elf
+```
+<img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/013.jpg" >
+
+Powershell commands of show disassemble of learn-in-depth.elf
+```
+arm-none-eabi-objdump.exe -d learn-in-depth.elf
+```
+<img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/014.jpg" >
+
+---
+
+## Show all symbols of startup.o, app.o, uart.o, learn-in-depth.elf
+
+Powershell commands of show all symbols
+```
+arm-none-eabi-nm.exe startup.o, app.o, uart.o, learn-in-depth.elf
+```
+
+---
+## 
