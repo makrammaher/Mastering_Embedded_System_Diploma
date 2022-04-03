@@ -44,7 +44,9 @@ arm-none-eabi-objdump.exe -h app.o
 ```
 > Powershell Output
 <img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/005.jpg" >
+
 > Powershell commands of show content of each section
+
 ```
 arm-none-eabi-objdump.exe -s uart.o
 ```
