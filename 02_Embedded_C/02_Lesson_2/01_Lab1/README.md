@@ -65,3 +65,31 @@ arm-none-eabi-objdump.exe -s app.o
 <img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/006.jpg" >
 
 ---
+
+## Create startup.s file
+
+> startup.s File
+
+<img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/007.jpg" >
+
+> Powershell commands of Assemble startup.s
+
+```
+arm-none-eabi-as.exe -mcpu=arm926ej-s startup.s -o startup.o
+```
+> Output file
+<img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/008.jpg" >
+
+---
+
+> Powershell commands of show sections header of startup.o
+
+```
+arm-none-eabi-objdump.exe -h startup.o
+```
+> Output file
+<img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/009.jpg" >
+
+---
+
+## Create linker_script.ld file
