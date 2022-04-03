@@ -1,0 +1,44 @@
+Compile app.c and uart.c --> app.o and uart.o
+arm-none-eabi-gcc.exe -ansi -c -I . -g -mcpu=arm926ej-s app.c -o app.o
+arm-none-eabi-gcc.exe -ansi -c -I . -g -mcpu=arm926ej-s uart.c -o uart.o
+
+Show Sections header of app.o and uart.o
+arm-none-eabi-objdump.exe -h app.o
+arm-none-eabi-objdump.exe -h uart.o
+
+Remove all debug sections from app.o and uart.o
+arm-none-eabi-strip.exe -g app.o -o app.o
+arm-none-eabi-strip.exe -g uart.o -o uart.o
+
+Show Sections header of app.o and uart.o
+arm-none-eabi-objdump.exe -h app.o
+arm-none-eabi-objdump.exe -h uart.o
+
+Assemble startup.s --> startup.o
+arm-none-eabi-as.exe -mcpu=arm926ej-s startup.s -o startup.o
+
+Show Sections header of startup.o
+arm-none-eabi-objdump.exe -h startup.o
+
+link all .o files to create an executale image .elf and .map
+arm-none-eabi-ld.exe -T linker_script.ld -Map out.map startup.o app.o uart.o -o learn-in-depth.elf
+
+Show .elf all information all information in ReadElf.txt file
+arm-none-eabi-readelf.exe -a learn-in-depth.elf >> ReadElf.txt
+
+Show Sections header of learn-in-depth.elf
+arm-none-eabi-objdump.exe -h learn-in-depth.elf
+
+disassemble learn-in-depth.elf
+arm-none-eabi-objdump.exe -d learn-in-depth.elf
+
+show symbols in startup.o, app.o, uart.o, learn-in-depth.elf
+arm-none-eabi-nm.exe startup.o, app.o, uart.o, learn-in-depth.elf
+
+
+create burn image .bin (binary image)
+arm-none-eabi-objcopy.exe -O binary learn-in-depth.elf learn-in-depth.bin
+
+
+Run .bin file using QEMU
+qemu-system-arm.exe -M versatilepb -m 128M -nographic -kernel learn-in-depth.bin

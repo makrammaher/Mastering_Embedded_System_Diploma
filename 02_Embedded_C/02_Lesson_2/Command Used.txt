@@ -1,0 +1,42 @@
+New-Item main.c, uart.c, uart.h
+
+$env:path += ";C:\arm-toolchain\bin\"
+
+arm-none-eabi-gcc.exe -std=c89 -ansi -c -g -I . -mcpu=arm926ej-s main.c -o main.o
+arm-none-eabi-gcc.exe -std=c89 -ansi -c -g -I . -mcpu=arm926ej-s uart.c -o uart.o
+
+arm-none-eabi-objdump.exe -h main.o
+arm-none-eabi-objdump.exe -D main.o
+arm-none-eabi-objdump.exe -d main.o
+arm-none-eabi-objdump.exe -s main.o
+
+arm-none-eabi-objdump.exe -h uart.o
+arm-none-eabi-objdump.exe -D uart.o
+arm-none-eabi-objdump.exe -d uart.o
+arm-none-eabi-objdump.exe -s uart.o
+
+arm-none-eabi-strip.exe -g main.o
+arm-none-eabi-strip.exe -g uart.o
+
+New-Item startup.s
+arm-none-eabi-as.exe -mcpu=arm926ej-s startup.s -o startup.o
+
+New-Item linker_script.ld
+arm-none-eabi-ld.exe -T linker_script.ld -Map out.map startup.o main.o uart.o -o learn-in-depth.elf
+
+arm-none-eabi-nm.exe learn-in-depth.elf
+arm-none-eabi-nm.exe startup.o
+arm-none-eabi-nm.exe main.o
+arm-none-eabi-nm.exe uart.o
+
+arm-none-eabi-objdump.exe -h learn-in-depth.elf
+arm-none-eabi-objdump.exe -d learn-in-depth.elf
+arm-none-eabi-objdump.exe -D learn-in-depth.elf
+arm-none-eabi-objdump.exe -s learn-in-depth.elf
+
+arm-none-eabi-readelf.exe -a .\learn-in-depth.elf
+
+arm-none-eabi-objcopy.exe -O binary .\learn-in-depth.elf .\learn-in-depth.bin
+
+$env:path += ";C:\qemu\"
+qemu-system-arm.exe -M versatilepb -m 128M -nographic -kernel .\learn-in-depth.bin
