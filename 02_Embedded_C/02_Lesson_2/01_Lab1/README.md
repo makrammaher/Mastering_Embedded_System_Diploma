@@ -103,6 +103,6 @@ arm-none-eabi-objdump.exe -h startup.o
 ```
 arm-none-eabi-ld.exe -T linker_script.ld -Map out.map startup.o app.o uart.o -o learn-in-depth.elf
 ```
-> Output file
+- Output file
 
 <img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/011.jpg" >
