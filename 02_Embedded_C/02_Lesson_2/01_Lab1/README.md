@@ -106,3 +106,11 @@ arm-none-eabi-ld.exe -T linker_script.ld -Map out.map startup.o app.o uart.o -o 
 - Output file
 
 <img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/011.jpg" >
+
+## Showing information about executable file .elf
+
+- Powershell commands of show all information using readelf
+```
+arm-none-eabi-readelf.exe -a learn-in-depth.elf
+```
+<img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/012.jpg" >
