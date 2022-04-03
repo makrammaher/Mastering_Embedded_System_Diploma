@@ -66,7 +66,7 @@ arm-none-eabi-objdump.exe -s app.o
 
 ---
 
-## Create startup.s file
+## Create startup.s file and assemble it and get startup.o file
 
 > startup.s File
 
@@ -87,9 +87,22 @@ arm-none-eabi-as.exe -mcpu=arm926ej-s startup.s -o startup.o
 ```
 arm-none-eabi-objdump.exe -h startup.o
 ```
-> Output file
+> Powershell Output
 <img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/009.jpg" >
 
 ---
 
-## Create linker_script.ld file
+## Create linker_script.ld file and use linker to create excutable file .elf
+
+> linker_script.ld
+
+<img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/010.jpg" >
+
+> Powershell commands of link all .o files to create an executale image .elf and .map
+
+```
+arm-none-eabi-ld.exe -T linker_script.ld -Map out.map startup.o app.o uart.o -o learn-in-depth.elf
+```
+> Output file
+
+<img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/011.jpg" >
