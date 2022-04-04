@@ -12,7 +12,6 @@ arm-none-eabi-gcc.exe -ansi -c -I . -g -mcpu=arm926ej-s app.c -o app.o
 ```
 arm-none-eabi-gcc.exe -ansi -c -I . -g -mcpu=arm926ej-s uart.c -o uart.o
 ```
-- Output files
 <img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/002.jpg" >
 
 ---
