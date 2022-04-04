@@ -4,7 +4,6 @@
 <img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/001.jpg" >
 
 ---
-
 ## Compile app.c and uart.c --> app.o and uart.o
 ```
 arm-none-eabi-gcc.exe -ansi -c -I . -g -mcpu=arm926ej-s app.c -o app.o
