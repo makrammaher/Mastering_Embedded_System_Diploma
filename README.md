@@ -15,7 +15,7 @@
     7. [Pointers](01_C_Programming/07_C_Pointers)
 3. [Embedded C](02_Embedded_C) ![image](https://progress-bar.dev/50/?title=In_Progress&color=daa520)
     1. [Lesson 1](02_Embedded_C/01_Lesson_1)
-    2. [Lesson 1](02_Embedded_C/02_Lesson_2)
+    2. [Lesson 2](02_Embedded_C/02_Lesson_2)
 4. System Architecture ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 5. First Term Project ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 
