@@ -129,10 +129,22 @@ arm-none-eabi-objdump.exe -d learn-in-depth.elf
 
 ## Show all symbols of startup.o, app.o, uart.o, learn-in-depth.elf
 
-Powershell commands of show all symbols
 ```
 arm-none-eabi-nm.exe startup.o, app.o, uart.o, learn-in-depth.elf
 ```
+<img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/015.jpg" >
 
 ---
-## 
+## create burn image .bin (binary image)
+```
+arm-none-eabi-objcopy.exe -O binary learn-in-depth.elf learn-in-depth.bin
+```
+<img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/016.jpg" >
+
+
+---
+## Run .bin file using QEMU
+```
+qemu-system-arm.exe -M versatilepb -m 128M -nographic -kernel learn-in-depth.bin
+```
+<img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/017.jpg" >
