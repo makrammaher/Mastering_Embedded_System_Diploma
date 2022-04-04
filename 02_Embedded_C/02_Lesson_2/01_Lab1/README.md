@@ -89,18 +89,12 @@ arm-none-eabi-objdump.exe -h startup.o
 ---
 
 ## Create linker_script.ld file and use linker to create excutable file .elf
-
-- linker_script.ld
-
 <img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/010.jpg" >
 
-- Powershell commands of link all .o files to create an executale image .elf and .map
-
-```
-arm-none-eabi-ld.exe -T linker_script.ld -Map out.map startup.o app.o uart.o -o learn-in-depth.elf
-```
-- Output file
-
+>> Powershell commands of link all .o files to create an executale image .elf and .map
+>  ```
+>  arm-none-eabi-ld.exe -T linker_script.ld -Map out.map startup.o app.o uart.o -o learn-in-depth.elf
+>  ```
 <img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/011.jpg" >
 
 ---
@@ -113,12 +107,14 @@ arm-none-eabi-readelf.exe -a learn-in-depth.elf
 ```
 <img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/012.jpg" >
 
+---
 Powershell commands of show sections header of learn-in-depth.elf
 ```
 arm-none-eabi-objdump.exe -h learn-in-depth.elf
 ```
 <img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/013.jpg" >
 
+---
 Powershell commands of show disassemble of learn-in-depth.elf
 ```
 arm-none-eabi-objdump.exe -d learn-in-depth.elf
@@ -127,15 +123,14 @@ arm-none-eabi-objdump.exe -d learn-in-depth.elf
 
 ---
 
-## Show all symbols of startup.o, app.o, uart.o, learn-in-depth.elf
-
+## **Show all symbols of startup.o, app.o, uart.o, learn-in-depth.elf**
 ```
 arm-none-eabi-nm.exe startup.o, app.o, uart.o, learn-in-depth.elf
 ```
 <img src="/02_Embedded_C/02_Lesson_2/01_Lab1/img/015.jpg" >
 
 ---
-## create burn image .bin (binary image)
+## **create burn image .bin (binary image)**
 ```
 arm-none-eabi-objcopy.exe -O binary learn-in-depth.elf learn-in-depth.bin
 ```
