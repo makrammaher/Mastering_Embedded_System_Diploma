@@ -143,7 +143,7 @@ arm-none-eabi-objcopy.exe -O binary learn-in-depth.elf learn-in-depth.bin
 
 
 ---
-## Run .bin file using QEMU
+## **Run .bin file using QEMU**
 ```
 qemu-system-arm.exe -M versatilepb -m 128M -nographic -kernel learn-in-depth.bin
 ```
