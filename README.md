@@ -16,7 +16,7 @@
 3. [Embedded C](02_Embedded_C) ![image](https://progress-bar.dev/75/?title=In_Progress&color=daa520)
     1. [Lesson 1](02_Embedded_C/01_Lesson_1)
     2. [Lesson 2](02_Embedded_C/02_Lesson_2)
-    3. [Lesson 3](02_Embedded_c/03_Lesson_3)
+    3. [Lesson 3](02_Embedded_C/03_Lesson_3)
 4. System Architecture ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 5. First Term Project ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 
