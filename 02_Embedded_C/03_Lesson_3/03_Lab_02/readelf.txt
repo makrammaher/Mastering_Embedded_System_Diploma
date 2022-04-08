@@ -1,0 +1,133 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           ARM
+  Version:                           0x1
+  Entry point address:               0x800014d
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          136192 (bytes into file)
+  Flags:                             0x5000200, Version5 EABI, soft-float ABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         2
+  Size of section headers:           40 (bytes)
+  Number of section headers:         17
+  Section header string table index: 16
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .text             PROGBITS        08000000 010000 0001dc 00  AX  0   0  4
+  [ 2] .rodata           PROGBITS        080001dc 0101dc 000060 00   A  0   0  4
+  [ 3] .data             PROGBITS        20000000 020000 000050 00  WA  0   0  4
+  [ 4] .bss              NOBITS          20000050 020050 000bb8 00  WA  0   0  4
+  [ 5] .debug_info       PROGBITS        00000000 020050 0004f2 00      0   0  1
+  [ 6] .debug_abbrev     PROGBITS        00000000 020542 000239 00      0   0  1
+  [ 7] .debug_loc        PROGBITS        00000000 02077b 00013c 00      0   0  1
+  [ 8] .debug_aranges    PROGBITS        00000000 0208b7 000040 00      0   0  1
+  [ 9] .debug_line       PROGBITS        00000000 0208f7 000268 00      0   0  1
+  [10] .debug_str        PROGBITS        00000000 020b5f 000253 01  MS  0   0  1
+  [11] .comment          PROGBITS        00000000 020db2 000057 01  MS  0   0  1
+  [12] .ARM.attributes   ARM_ATTRIBUTES  00000000 020e09 00002d 00      0   0  1
+  [13] .debug_frame      PROGBITS        00000000 020e38 0000c0 00      0   0  4
+  [14] .symtab           SYMTAB          00000000 020ef8 000320 10     15  28  4
+  [15] .strtab           STRTAB          00000000 021218 000142 00      0   0  1
+  [16] .shstrtab         STRTAB          00000000 02135a 0000a5 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  D (mbind), y (purecode), p (processor specific)
+
+There are no section groups in this file.
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  LOAD           0x010000 0x08000000 0x08000000 0x0023c 0x0023c R E 0x10000
+  LOAD           0x020000 0x20000000 0x0800023c 0x00050 0x00c08 RW  0x10000
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .text .rodata 
+   01     .data .bss 
+
+There is no dynamic section in this file.
+
+There are no relocations in this file.
+
+There are no unwind sections in this file.
+
+Symbol table '.symtab' contains 50 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 08000000     0 SECTION LOCAL  DEFAULT    1 .text
+     2: 080001dc     0 SECTION LOCAL  DEFAULT    2 .rodata
+     3: 20000000     0 SECTION LOCAL  DEFAULT    3 .data
+     4: 20000050     0 SECTION LOCAL  DEFAULT    4 .bss
+     5: 00000000     0 SECTION LOCAL  DEFAULT    5 .debug_info
+     6: 00000000     0 SECTION LOCAL  DEFAULT    6 .debug_abbrev
+     7: 00000000     0 SECTION LOCAL  DEFAULT    7 .debug_loc
+     8: 00000000     0 SECTION LOCAL  DEFAULT    8 .debug_aranges
+     9: 00000000     0 SECTION LOCAL  DEFAULT    9 .debug_line
+    10: 00000000     0 SECTION LOCAL  DEFAULT   10 .debug_str
+    11: 00000000     0 SECTION LOCAL  DEFAULT   11 .comment
+    12: 00000000     0 SECTION LOCAL  DEFAULT   12 .ARM.attributes
+    13: 00000000     0 SECTION LOCAL  DEFAULT   13 .debug_frame
+    14: 00000000     0 FILE    LOCAL  DEFAULT  ABS startup.c
+    15: 08000000     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    16: 0800014c     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    17: 080001bc     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    18: 080001d0     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    19: 00000000     0 FILE    LOCAL  DEFAULT  ABS main.c
+    20: 08000050     0 NOTYPE  LOCAL  DEFAULT    1 $t
+    21: 20000050     0 NOTYPE  LOCAL  DEFAULT    4 $d
+    22: 20000000     0 NOTYPE  LOCAL  DEFAULT    3 $d
+    23: 080001dc     0 NOTYPE  LOCAL  DEFAULT    2 $d
+    24: 0800012c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+    25: 20000820  1000 NOTYPE  LOCAL  DEFAULT    4 array_3.2
+    26: 20000040    16 OBJECT  LOCAL  DEFAULT    3 array_4.1
+    27: 08000230    12 OBJECT  LOCAL  DEFAULT    2 str.0
+    28: 0800023c     0 NOTYPE  GLOBAL DEFAULT    2 _E_TEXT
+    29: 08000051    12 FUNC    GLOBAL DEFAULT    1 NMI_handler
+    30: 20000050  2000 OBJECT  GLOBAL DEFAULT    4 array_1
+    31: 080001d1    12 FUNC    WEAK   DEFAULT    1 Reserved4_handler
+    32: 080001d1    12 FUNC    WEAK   DEFAULT    1 Reserved2_handler
+    33: 080001d1    12 FUNC    WEAK   DEFAULT    1 Reserved3_handler
+    34: 20000000    64 OBJECT  GLOBAL DEFAULT    3 array_2
+    35: 20000050     0 NOTYPE  GLOBAL DEFAULT    3 _E_DATA
+    36: 0800005d    12 FUNC    GLOBAL DEFAULT    1 HardFault_handler
+    37: 0800014d   132 FUNC    GLOBAL DEFAULT    1 Reset_handler
+    38: 20000c08     0 NOTYPE  GLOBAL DEFAULT    4 _E_BSS
+    39: 080001d1    12 FUNC    WEAK   DEFAULT    1 Reserved1_handler
+    40: 08000069   228 FUNC    GLOBAL DEFAULT    1 main
+    41: 20000000     0 NOTYPE  GLOBAL DEFAULT    3 _S_DATA
+    42: 20001c08     0 NOTYPE  GLOBAL DEFAULT    4 _STACK_TOP
+    43: 20000050     0 NOTYPE  GLOBAL DEFAULT    4 _S_BSS
+    44: 080001d1    12 FUNC    WEAK   DEFAULT    1 UsageFault_handler
+    45: 08000000    80 OBJECT  GLOBAL DEFAULT    1 vectors
+    46: 080001d1    12 FUNC    WEAK   DEFAULT    1 MMFault_handler
+    47: 080001dc    20 OBJECT  GLOBAL DEFAULT    2 myNameStr
+    48: 080001d1    12 FUNC    WEAK   DEFAULT    1 BusFault_handler
+    49: 080001d1    12 FUNC    GLOBAL DEFAULT    1 Default_handler
+
+No version information found in this file.
+Attribute Section: aeabi
+File Attributes
+  Tag_CPU_name: "7-M"
+  Tag_CPU_arch: v7
+  Tag_CPU_arch_profile: Microcontroller
+  Tag_THUMB_ISA_use: Thumb-2
+  Tag_ABI_PCS_wchar_t: 4
+  Tag_ABI_FP_denormal: Needed
+  Tag_ABI_FP_exceptions: Needed
+  Tag_ABI_FP_number_model: IEEE 754
+  Tag_ABI_align_needed: 8-byte
+  Tag_ABI_align_preserved: 8-byte, except leaf SP
+  Tag_ABI_enum_size: small
+  Tag_ABI_optimization_goals: Aggressive Debug
+  Tag_CPU_unaligned_access: v6
