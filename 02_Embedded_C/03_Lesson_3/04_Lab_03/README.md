@@ -40,25 +40,26 @@ target remote localhost:1234
 **14**|**finish \ f**|Runs until the current function is finshed
 **15**|**step \ s**|Runs the next line of the program
 **16**|**s N**|Runs the next N lines of the program
-**17**|**next \ n**|Like s, but it does not step into funstions
-**18**|**kill**|Kills the running program
-**19**|**backtrace \ where**|Shows call stack
-**20**|**backtrace full \ where full**|Shows call stack,also print the local variables in each frame
-**21**|**u**|Goes up a level in the stack
-**22**|**d**|Goes down a level in the stack
-**23**|**print Var \ p Var**|Prints the current value of the variable 'Var'
-**24**|**display Var**|Like print, but it print the information after each stepping instruction
-**25**|**enable display N**|Enable a disabled display number N
-**26**|**disable display N**|Disable an enabled display number N
-**27**|**x/nfu address**|Print memory|
+**17**|**si**|Runs the next assembly instruction.
+**18**|**next \ n**|Like s, but it does not step into funstions
+**19**|**kill**|Kills the running program
+**20**|**backtrace \ where**|Shows call stack
+**21**|**backtrace full \ where full**|Shows call stack,also print the local variables in each frame
+**22**|**u**|Goes up a level in the stack
+**23**|**d**|Goes down a level in the stack
+**24**|**print Var \ p Var**|Prints the current value of the variable 'Var'
+**25**|**display Var**|Like print, but it print the information after each stepping instruction
+**26**|**enable display N**|Enable a disabled display number N
+**27**|**disable display N**|Disable an enabled display number N
+**28**|**x/nfu address**|Print memory|
 |||n: How many units to print |
 |||f: format character|
 |||u: unit (b: Byte, h:Half-word, w:Word, g:Gaint-word)|
-**28**|**watch Var**|Watch on the variable Var
-**29**|**list \ l**|Prints source code of current line
-**30**|**l N**|Prints source code of line N
-**31**|**l S,N**|Prints source code from line S to line N
-**32**|**l file.c:N**|Prints source code of line N in file.c
-**33**|**target remote localhost:1234**|to connect with qemu
-**34**|**help**|Prints help classes
-**35**|**help X**|Prints help of class X
+**29**|**watch Var**|Watch on the variable Var
+**30**|**list \ l**|Prints source code of current line
+**31**|**l N**|Prints source code of line N
+**32**|**l S,N**|Prints source code from line S to line N
+**33**|**l file.c:N**|Prints source code of line N in file.c
+**34**|**target remote localhost:1234**|to connect with qemu
+**35**|**help**|Prints help classes
+**36**|**help X**|Prints help of class X
