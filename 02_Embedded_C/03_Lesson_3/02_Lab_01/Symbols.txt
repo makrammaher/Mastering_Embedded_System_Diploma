@@ -1,0 +1,13 @@
+
+main.o:
+00000000 T main
+
+startup.o:
+00000000 T _reset
+         U main
+00000006 T Vector_handler
+
+toggle-led.elf:
+080000bc T _reset
+08000050 T main
+080000c2 T Vector_handler

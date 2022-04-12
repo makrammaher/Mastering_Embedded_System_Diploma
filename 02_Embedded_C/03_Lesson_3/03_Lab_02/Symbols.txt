@@ -1,0 +1,59 @@
+
+main.o:
+00000000 B array_1
+00000000 D array_2
+000007d0 b array_3.2
+00000040 d array_4.1
+0000000c T HardFault_handler
+00000018 T main
+00000000 R myNameStr
+00000000 T NMI_handler
+00000054 r str.0
+
+startup.o:
+         U _E_BSS
+         U _E_DATA
+         U _E_TEXT
+         U _S_BSS
+         U _S_DATA
+         U _STACK_TOP
+00000084 W BusFault_handler
+00000084 T Default_handler
+00000084 W HardFault_handler
+         U main
+00000084 W MMFault_handler
+00000084 W NMI_handler
+00000084 W Reserved1_handler
+00000084 W Reserved2_handler
+00000084 W Reserved3_handler
+00000084 W Reserved4_handler
+00000000 T Reset_handler
+00000084 W UsageFault_handler
+00000000 D vectors
+
+toggle-led.elf:
+20000c08 B _E_BSS
+20000050 D _E_DATA
+0800023c R _E_TEXT
+20000050 B _S_BSS
+20000000 D _S_DATA
+20001c08 B _STACK_TOP
+20000050 B array_1
+20000000 D array_2
+20000820 b array_3.2
+20000040 d array_4.1
+080001d0 W BusFault_handler
+080001d0 T Default_handler
+0800005c T HardFault_handler
+08000068 T main
+080001d0 W MMFault_handler
+080001dc R myNameStr
+08000050 T NMI_handler
+080001d0 W Reserved1_handler
+080001d0 W Reserved2_handler
+080001d0 W Reserved3_handler
+080001d0 W Reserved4_handler
+0800014c T Reset_handler
+08000230 r str.0
+080001d0 W UsageFault_handler
+08000000 T vectors
