@@ -12,16 +12,17 @@ in openOCD directory use this command
 listening on port 3333 for gdb connections
 <img src="/02_Embedded_C/04_Lesson_4/02_Lab_02/img/001.jpg" >
 
-Enjoy debugging Video
-
-<img src="/02_Embedded_C/04_Lesson_4/02_Lab_02/img/Terminal.gif" >
-
 in gdb terminal
 ```
 arm-none-eabi-gdb.exe ./bin/toggle-led-STM32.elf
 ```
 connect to OpenOCD Server using gdb
+
 <img src="/02_Embedded_C/04_Lesson_4/02_Lab_02/img/002.jpg" >
+
+Enjoy debugging Video
+
+<img src="/02_Embedded_C/04_Lesson_4/02_Lab_02/img/Terminal.gif" >
 
 ---
 ## **Proteus Simulator using PORTA not PORTC**
