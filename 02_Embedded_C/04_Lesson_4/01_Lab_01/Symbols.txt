@@ -1,0 +1,37 @@
+
+./bin/toggle-led-tiva-c.elf:
+00000124 W _BUS_fault_handler
+00000124 T _default_handler
+20000000 D _E_BSS
+20000000 D _E_DATA
+00000130 D _E_TEXT
+00000124 W _Hard_fault_handler
+00000124 W _MM_fault_handler
+00000124 W _NMI_handler
+000000a0 T _reset_handler
+20000000 D _S_BSS
+20000000 D _S_DATA
+00000124 W _Usage_fault_handler
+00000000 T g_p_Vectors
+0000001c T main
+20000000 d Stack
+
+./obj/main.o:
+00000000 T main
+
+./obj/startup.o:
+00000084 W _BUS_fault_handler
+00000084 T _default_handler
+         U _E_BSS
+         U _E_DATA
+         U _E_TEXT
+00000084 W _Hard_fault_handler
+00000084 W _MM_fault_handler
+00000084 W _NMI_handler
+00000000 T _reset_handler
+         U _S_BSS
+         U _S_DATA
+00000084 W _Usage_fault_handler
+00000000 R g_p_Vectors
+         U main
+00000000 d Stack

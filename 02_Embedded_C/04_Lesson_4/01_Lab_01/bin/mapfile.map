@@ -1,0 +1,117 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x00000000         0x20000000         xr
+SRAM             0x20000000         0x20000000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+.text           0x00000000      0x130
+ *(.vectors)
+ .vectors       0x00000000       0x1c ./obj/startup.o
+                0x00000000                g_p_Vectors
+ *(.text)
+ .text          0x0000001c       0x84 ./obj/main.o
+                0x0000001c                main
+ .text          0x000000a0       0x90 ./obj/startup.o
+                0x000000a0                _reset_handler
+                0x00000124                _Usage_fault_handler
+                0x00000124                _MM_fault_handler
+                0x00000124                _BUS_fault_handler
+                0x00000124                _Hard_fault_handler
+                0x00000124                _NMI_handler
+                0x00000124                _default_handler
+
+.glue_7         0x00000130        0x0
+ .glue_7        0x00000130        0x0 linker stubs
+
+.glue_7t        0x00000130        0x0
+ .glue_7t       0x00000130        0x0 linker stubs
+
+.vfp11_veneer   0x00000130        0x0
+ .vfp11_veneer  0x00000130        0x0 linker stubs
+
+.v4_bx          0x00000130        0x0
+ .v4_bx         0x00000130        0x0 linker stubs
+
+.iplt           0x00000130        0x0
+ .iplt          0x00000130        0x0 ./obj/startup.o
+
+.rel.dyn        0x00000130        0x0
+ .rel.iplt      0x00000130        0x0 ./obj/startup.o
+
+.rodata         0x00000130        0x0
+ *(.rodata)
+                0x00000130                _E_TEXT = .
+
+.data           0x20000000        0x0 load address 0x00000130
+                0x20000000                _S_DATA = .
+ *(.data)
+ .data          0x20000000        0x0 ./obj/main.o
+ .data          0x20000000        0x0 ./obj/startup.o
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _E_DATA = .
+
+.igot.plt       0x20000000        0x0 load address 0x00000130
+ .igot.plt      0x20000000        0x0 ./obj/startup.o
+
+.bss            0x20000000      0x400 load address 0x00000130
+                0x20000000                _S_BSS = .
+ *(.bss)
+ .bss           0x20000000        0x0 ./obj/main.o
+ .bss           0x20000000        0x0 ./obj/startup.o
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _E_BSS = .
+ *(.stack)
+ .stack         0x20000000      0x400 ./obj/startup.o
+LOAD ./obj/main.o
+LOAD ./obj/startup.o
+OUTPUT(bin/toggle-led-tiva-c.elf elf32-littlearm)
+LOAD linker stubs
+
+.debug_info     0x00000000      0x277
+ .debug_info    0x00000000       0xad ./obj/main.o
+ .debug_info    0x000000ad      0x1ca ./obj/startup.o
+
+.debug_abbrev   0x00000000      0x15b
+ .debug_abbrev  0x00000000       0x66 ./obj/main.o
+ .debug_abbrev  0x00000066       0xf5 ./obj/startup.o
+
+.debug_loc      0x00000000       0xb4
+ .debug_loc     0x00000000       0x38 ./obj/main.o
+ .debug_loc     0x00000038       0x7c ./obj/startup.o
+
+.debug_aranges  0x00000000       0x40
+ .debug_aranges
+                0x00000000       0x20 ./obj/main.o
+ .debug_aranges
+                0x00000020       0x20 ./obj/startup.o
+
+.debug_line     0x00000000      0x22c
+ .debug_line    0x00000000      0x108 ./obj/main.o
+ .debug_line    0x00000108      0x124 ./obj/startup.o
+
+.debug_str      0x00000000      0x1b5
+ .debug_str     0x00000000      0x126 ./obj/main.o
+                                0x163 (size before relaxing)
+ .debug_str     0x00000126       0x8f ./obj/startup.o
+                                0x1f3 (size before relaxing)
+
+.comment        0x00000000       0x57
+ .comment       0x00000000       0x57 ./obj/main.o
+                                 0x58 (size before relaxing)
+ .comment       0x00000057       0x58 ./obj/startup.o
+
+.ARM.attributes
+                0x00000000       0x2e
+ .ARM.attributes
+                0x00000000       0x2e ./obj/main.o
+ .ARM.attributes
+                0x0000002e       0x2e ./obj/startup.o
+
+.debug_frame    0x00000000       0x7c
+ .debug_frame   0x00000000       0x2c ./obj/main.o
+ .debug_frame   0x0000002c       0x50 ./obj/startup.o
