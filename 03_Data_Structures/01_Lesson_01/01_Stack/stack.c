@@ -24,6 +24,9 @@ stack_status_t stack_Init(stack_t* stack, void* buffer, uint8_t length, uint8_t 
 
 stack_status_t stack_Is_Full(stack_t* stack)
 {
+    /* Check null pointers */
+    if (stack == NULL || stack->base == NULL || stack->head == NULL)
+        return STACK_null;
     if (stack->count == stack->length)
         return STACK_full;
     else
@@ -32,6 +35,9 @@ stack_status_t stack_Is_Full(stack_t* stack)
 
 stack_status_t stack_Is_Empty(stack_t* stack)
 {
+    /* Check null pointers */
+    if (stack == NULL || stack->base == NULL || stack->head == NULL)
+        return STACK_null;
     if (stack->count == 0)
         return STACK_empty;
     else
@@ -53,10 +59,10 @@ stack_status_t stack_Push(stack_t* stack, void* data)
     for (i = 0; i < stack->element_Size; i++)
     {
         /* Copy data byte by byte from data to stack */
-        *(stack->head + i) = *((uint8_t*)data + i);
+        *((uint8_t*)stack->head + i) = *((uint8_t*)data + i);
     }
     /* increament stack head and count */
-    stack->head += stack->element_Size;
+    stack->head = (uint8_t*)stack->head + stack->element_Size;
     stack->count++;
     return STACK_no_error;
 }
@@ -72,13 +78,13 @@ stack_status_t stack_Pop(stack_t* stack, void* data)
         return STACK_empty;
 
     /* decreament stack head*/
-    stack->head -= stack->element_Size;
+    stack->head = (uint8_t*) stack->head - stack->element_Size;
     /* Pop data from stack */
     uint8_t i;
     for (i = 0; i < stack->element_Size; i++)
     {
         /* Copy data byte by byte from stack to data */
-        *((uint8_t*)data + i) = *(stack->head + i);
+        *((uint8_t*)data + i) = *((uint8_t*)stack->head + i);
     }
 
     /* decreament stack head and count */
@@ -97,7 +103,7 @@ stack_status_t stack_Top(stack_t* stack, void* data)
     if (stack_Is_Empty(stack) == STACK_empty)
         return STACK_empty;
 
-    uint8_t* temp = stack->head - stack->element_Size;
+    uint8_t* temp = ((uint8_t*)stack->head) - stack->element_Size;
     uint8_t i;
     for (i = 0; i < stack->element_Size; i++)
     {

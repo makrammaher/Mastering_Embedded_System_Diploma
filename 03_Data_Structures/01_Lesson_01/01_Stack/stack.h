@@ -15,8 +15,8 @@
 
 typedef struct
 {
-    uint8_t*    base;         /* pointer to the base of the stack */
-    uint8_t*    head;         /* pointer to the top of the stack */
+    void*       base;         /* pointer to the base of the stack */
+    void*       head;         /* pointer to the top of the stack */
     uint8_t     element_Size; /* hold size of element in bytes */
     uint16_t    length;       /* stack max number of element */
     uint16_t    count;        /* number of element in stack right now */
@@ -38,7 +38,6 @@ stack_status_t stack_Pop(stack_t* stack, void* data);
 stack_status_t stack_Top(stack_t* stack, void* data);
 stack_status_t stack_Is_Full(stack_t* stack);
 stack_status_t stack_Is_Empty(stack_t* stack);
-
 
 
 #endif
