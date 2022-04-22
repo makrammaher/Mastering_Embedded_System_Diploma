@@ -10,8 +10,8 @@
 #include <stdio.h>
 #include "queue.h"
 
-#define queue_uint16_size   10
-#define queue_float_size    10
+#define queue_uint16_size   5
+#define queue_float_size    5
 
 int main(void)
 {
@@ -23,7 +23,7 @@ int main(void)
 
     uint16_t i, data;
     
-    for (i = 0; i < 12; i++)
+    for (i = 0; i < 6; i++)
     {
         queue_status_t status = queue_Enqueue(&queue_uint16, &i);
         switch(status)
@@ -39,7 +39,7 @@ int main(void)
         }
     }
     puts("");
-    for (i = 0; i < 12; i++)
+    for (i = 0; i < 6; i++)
     {
         queue_status_t status = queue_Dequeue(&queue_uint16, &data);
         switch(status)
@@ -64,7 +64,7 @@ int main(void)
 
     float f, fdata;
 
-    for (f = 1.0; f < 2.2; f += 0.1)
+    for (f = 1.0; f < 1.6; f += 0.1)
     {
         queue_status_t status = queue_Enqueue(&queue_float, &f);
         switch(status)
@@ -81,7 +81,43 @@ int main(void)
     }
     puts("");
     
-    for (i = 0; i < 12; i++)
+    for (i = 0; i < 2; i++)
+    {
+        queue_status_t status = queue_Dequeue(&queue_float, &fdata);
+        switch(status)
+        {
+            case QUEUE_no_error:
+            printf("Done  --> Pop %.1f from queue_float\n", fdata);
+            break;
+            case QUEUE_empty:
+            printf("Error --> queue is empty\n");
+            break;
+            default:
+            break;
+        }
+    }
+
+    puts("");
+
+    for (f = 1.0; f < 1.6; f += 0.1)
+    {
+        queue_status_t status = queue_Enqueue(&queue_float, &f);
+        switch(status)
+        {
+            case QUEUE_no_error:
+            printf("Done  --> Push %.1f to queue_float\n", f);
+            break;
+            case QUEUE_full:
+            printf("Error --> queue is full\n");
+            break;
+            default:
+            break;
+        }
+    }
+
+    puts("");
+
+    for (i = 0; i < 6; i++)
     {
         queue_status_t status = queue_Dequeue(&queue_float, &fdata);
         switch(status)

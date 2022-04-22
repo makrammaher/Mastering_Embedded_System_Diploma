@@ -1,8 +1,8 @@
-# **Generic Stack Implementation**
+# **Generic Queue Implementation**
 ## **Compile using GNU GCC Native tool chain**
 
 ```
-gcc.exe -std=c89 -ansi -g -Wall main.c stack.c -I . -o main.exe
+gcc.exe -std=c89 -ansi -g -Wall main.c queue.c -I . -o main.exe
 ```
 
 ## **Terminal Output**
@@ -10,6 +10,6 @@ gcc.exe -std=c89 -ansi -g -Wall main.c stack.c -I . -o main.exe
 ./main.exe
 ```
 
-<img src="/03_Data_Structures/01_Lesson_01/01_Stack/img/output.jpg" >
+<img src="/03_Data_Structures/01_Lesson_01/02_Circular_Queue/img/output.jpg" >
 
 ---
