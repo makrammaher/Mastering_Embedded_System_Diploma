@@ -33,28 +33,13 @@ typedef enum
     QUEUE_null
 } queue_status_t;
 
-typedef enum
-{
-    PRINT_QUEUE_INT8,
-    PRINT_QUEUE_INT16,
-    PRINT_QUEUE_INT32,
-    PRINT_QUEUE_INT64,
-    PRINT_QUEUE_UINT8,
-    PRINT_QUEUE_UINT16,
-    PRINT_QUEUE_UINT32,
-    PRINT_QUEUE_UINT64,
-    PRINT_QUEUE_F32,
-    PRINT_QUEUE_F64
-}queue_print_type_t;
-
-
 queue_status_t queue_Init(queue_t* queue, void* buffer, uint8_t length, uint8_t element_size);
 queue_status_t queue_Enqueue(queue_t* queue, void* data);
 queue_status_t queue_Dequeue(queue_t* queue, void* data);
 queue_status_t queue_Top(queue_t* queue, void* data);
 queue_status_t queue_Is_Full(queue_t* queue);
 queue_status_t queue_Is_Empty(queue_t* queue);
-queue_status_t queue_Print(queue_t* queue, char* printfSTR, queue_print_type_t type);
+queue_status_t queue_Print(queue_t* queue, void(*printFun)(void *, uint8_t));
 
 
 #endif

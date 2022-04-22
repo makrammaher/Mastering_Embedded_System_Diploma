@@ -122,22 +122,8 @@ queue_status_t queue_Top(queue_t* queue, void* data)
     return QUEUE_no_error;
 }
 
-queue_status_t queue_Print(queue_t* queue, char* printfSTR, queue_print_type_t type)
+queue_status_t queue_Print(queue_t* queue, void(*printFun)(void *, uint8_t))
 {
-    typedef union
-    {
-        int8_t      int8;
-        int16_t     int16;
-        int32_t     int32;
-        int64_t     int64;
-        uint8_t     uint8;
-        uint16_t    uint16;
-        uint32_t    uint32;
-        uint64_t    uint64;
-        float       f32;
-        double      f64;
-    }dataHolder_t;
-
     /* Check null pointers */
     if (queue == NULL || queue->base == NULL || queue->head == NULL || queue->tail == NULL)
         return QUEUE_null;
@@ -146,55 +132,18 @@ queue_status_t queue_Print(queue_t* queue, char* printfSTR, queue_print_type_t t
     if (queue_Is_Empty(queue) == QUEUE_empty)
         return QUEUE_empty;
 
-    uint8_t i, j;
-    uint8_t* tailPTR = queue->tail;
-    dataHolder_t dataHolder;
-    void* dataPTR = (uint8_t*)&dataHolder;
+    uint8_t i;
+    void* tailPTR = queue->tail;
+
+
     printf("\n=============( Queue Print )=============\n");
     for (i = 0; i < queue->count; i++)
     {
-        for (j = 0; j < queue->element_Size; j++)
-        {
-            /* Copy data byte by byte from queue to data */
-            *((uint8_t*)dataPTR + j) = *((uint8_t*)tailPTR + j);
-        }
-        switch(type)
-        {
-            case PRINT_QUEUE_INT8:
-            printf(printfSTR, dataHolder.int8);
-            break;
-            case PRINT_QUEUE_INT16:
-            printf(printfSTR, dataHolder.int16);
-            break;
-            case PRINT_QUEUE_INT32:
-            printf(printfSTR, dataHolder.int32);
-            break;
-            case PRINT_QUEUE_INT64:
-            printf(printfSTR, dataHolder.int64);
-            break;
-            case PRINT_QUEUE_UINT8:
-            printf(printfSTR, dataHolder.uint8);
-            break;
-            case PRINT_QUEUE_UINT16:
-            printf(printfSTR, dataHolder.uint16);
-            break;
-            case PRINT_QUEUE_UINT32:
-            printf(printfSTR, dataHolder.uint32);
-            break;
-            case PRINT_QUEUE_UINT64:
-            printf(printfSTR, dataHolder.uint64);
-            break;
-            case PRINT_QUEUE_F32:
-            printf(printfSTR, dataHolder.f32);
-            break;
-            case PRINT_QUEUE_F64:
-            printf(printfSTR, dataHolder.f64);
-            break;
-            default:
-            break;
-        }
-        
+        /* your implementation of print according to data type in queue */
+        printFun(tailPTR, queue->element_Size);
 
+
+        /* next element :) */
         tailPTR = (uint8_t*)tailPTR + queue->element_Size;
         if (tailPTR == ((uint8_t*)queue->base + (queue->length * queue->element_Size)))
         {

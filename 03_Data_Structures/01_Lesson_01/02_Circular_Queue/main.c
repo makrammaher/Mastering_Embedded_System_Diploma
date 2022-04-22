@@ -13,6 +13,34 @@
 #define queue_uint16_size   5
 #define queue_float_size    5
 
+void Queue_print_uint16(void* ptr, uint8_t datasize)
+{
+    uint8_t i;
+    uint16_t data;
+    uint8_t* PTRdata = (uint8_t*) &data;
+    for (i = 0; i < datasize; i++)
+    {
+        /* Copy data byte by byte from queue to data */
+        *((uint8_t*)PTRdata + i) = *((uint8_t*)ptr + i);
+    }
+
+    printf("%d\n", data);
+}
+
+void Queue_print_float(void* ptr, uint8_t datasize)
+{
+    uint8_t i;
+    float data;
+    uint8_t* PTRdata = (uint8_t*) &data;
+    for (i = 0; i < datasize; i++)
+    {
+        /* Copy data byte by byte from queue to data */
+        *((uint8_t*)PTRdata + i) = *((uint8_t*)ptr + i);
+    }
+
+    printf("%.1f\n", data);
+}
+
 int main(void)
 {
     /* create a queue of 20 uint16_t and initialize it */
@@ -22,40 +50,40 @@ int main(void)
     /* ----------------------------------------------- */
 
     uint16_t i, data;
-    
+
     for (i = 0; i < 6; i++)
     {
         queue_status_t status = queue_Enqueue(&queue_uint16, &i);
-        switch(status)
+        switch (status)
         {
-            case QUEUE_no_error:
+        case QUEUE_no_error:
             printf("Done  --> Enqueue %d to queue_uint16\n", i);
             break;
-            case QUEUE_full:
+        case QUEUE_full:
             printf("Error --> queue is full\n");
             break;
-            default:
+        default:
             break;
         }
     }
 
     puts("");
 
-    queue_Print(&queue_uint16, "%d\n", PRINT_QUEUE_UINT16);
+    queue_Print(&queue_uint16, Queue_print_uint16);
 
     puts("");
     for (i = 0; i < 6; i++)
     {
         queue_status_t status = queue_Dequeue(&queue_uint16, &data);
-        switch(status)
+        switch (status)
         {
-            case QUEUE_no_error:
+        case QUEUE_no_error:
             printf("Done  --> Dequeue %d from queue_uint16\n", data);
             break;
-            case QUEUE_empty:
+        case QUEUE_empty:
             printf("Error --> queue is empty\n");
             break;
-            default:
+        default:
             break;
         }
     }
@@ -72,54 +100,54 @@ int main(void)
     for (f = 1.0; f < 1.6; f += 0.1)
     {
         queue_status_t status = queue_Enqueue(&queue_float, &f);
-        switch(status)
+        switch (status)
         {
-            case QUEUE_no_error:
+        case QUEUE_no_error:
             printf("Done  --> Enqueue %.1f to queue_float\n", f);
             break;
-            case QUEUE_full:
+        case QUEUE_full:
             printf("Error --> queue is full\n");
             break;
-            default:
+        default:
             break;
         }
     }
     puts("");
-    
+
     for (i = 0; i < 2; i++)
     {
         queue_status_t status = queue_Dequeue(&queue_float, &fdata);
-        switch(status)
+        switch (status)
         {
-            case QUEUE_no_error:
+        case QUEUE_no_error:
             printf("Done  --> Dequeue %.1f from queue_float\n", fdata);
             break;
-            case QUEUE_empty:
+        case QUEUE_empty:
             printf("Error --> queue is empty\n");
             break;
-            default:
+        default:
             break;
         }
     }
 
     puts("");
 
-    queue_Print(&queue_float, "%.1f\n", PRINT_QUEUE_F32);
+    queue_Print(&queue_float, Queue_print_float);
 
     puts("");
 
     for (f = 1.0; f < 1.6; f += 0.1)
     {
         queue_status_t status = queue_Enqueue(&queue_float, &f);
-        switch(status)
+        switch (status)
         {
-            case QUEUE_no_error:
+        case QUEUE_no_error:
             printf("Done  --> Enqueue %.1f to queue_float\n", f);
             break;
-            case QUEUE_full:
+        case QUEUE_full:
             printf("Error --> queue is full\n");
             break;
-            default:
+        default:
             break;
         }
     }
@@ -129,15 +157,15 @@ int main(void)
     for (i = 0; i < 6; i++)
     {
         queue_status_t status = queue_Dequeue(&queue_float, &fdata);
-        switch(status)
+        switch (status)
         {
-            case QUEUE_no_error:
+        case QUEUE_no_error:
             printf("Done  --> Dequeue %.1f from queue_float\n", fdata);
             break;
-            case QUEUE_empty:
+        case QUEUE_empty:
             printf("Error --> queue is empty\n");
             break;
-            default:
+        default:
             break;
         }
     }
