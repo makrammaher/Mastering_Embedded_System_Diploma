@@ -69,7 +69,7 @@ int main(void)
 
     puts("");
 
-    queue_Print(&queue_uint16, Queue_print_uint16);
+    queue_Print(&queue_uint16, &Queue_print_uint16);
 
     puts("");
     for (i = 0; i < 6; i++)
@@ -132,7 +132,7 @@ int main(void)
 
     puts("");
 
-    queue_Print(&queue_float, Queue_print_float);
+    queue_Print(&queue_float, &Queue_print_float);
 
     puts("");
 
