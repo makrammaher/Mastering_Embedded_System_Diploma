@@ -10,6 +10,10 @@ gcc.exe -std=c89 -ansi -g -Wall main.c queue.c -I . -o main.exe
 ./main.exe
 ```
 
-<img src="/03_Data_Structures/01_Lesson_01/02_Circular_Queue/img/output.jpg" >
+
+<img src="/03_Data_Structures/01_Lesson_01/02_Circular_Queue/img/output1.jpg" >
+
+
+<img src="/03_Data_Structures/01_Lesson_01/02_Circular_Queue/img/output2.jpg" >
 
 ---

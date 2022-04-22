@@ -38,6 +38,11 @@ int main(void)
             break;
         }
     }
+
+    puts("");
+
+    queue_Print(&queue_uint16, "%d\n", PRINT_QUEUE_UINT16);
+
     puts("");
     for (i = 0; i < 6; i++)
     {
@@ -45,7 +50,7 @@ int main(void)
         switch(status)
         {
             case QUEUE_no_error:
-            printf("Done  --> Pop %d from queue_uint16\n", data);
+            printf("Done  --> Dequeue %d from queue_uint16\n", data);
             break;
             case QUEUE_empty:
             printf("Error --> queue is empty\n");
@@ -70,7 +75,7 @@ int main(void)
         switch(status)
         {
             case QUEUE_no_error:
-            printf("Done  --> Push %.1f to queue_float\n", f);
+            printf("Done  --> Enqueue %.1f to queue_float\n", f);
             break;
             case QUEUE_full:
             printf("Error --> queue is full\n");
@@ -87,7 +92,7 @@ int main(void)
         switch(status)
         {
             case QUEUE_no_error:
-            printf("Done  --> Pop %.1f from queue_float\n", fdata);
+            printf("Done  --> Dequeue %.1f from queue_float\n", fdata);
             break;
             case QUEUE_empty:
             printf("Error --> queue is empty\n");
@@ -99,13 +104,17 @@ int main(void)
 
     puts("");
 
+    queue_Print(&queue_float, "%.1f\n", PRINT_QUEUE_F32);
+
+    puts("");
+
     for (f = 1.0; f < 1.6; f += 0.1)
     {
         queue_status_t status = queue_Enqueue(&queue_float, &f);
         switch(status)
         {
             case QUEUE_no_error:
-            printf("Done  --> Push %.1f to queue_float\n", f);
+            printf("Done  --> Enqueue %.1f to queue_float\n", f);
             break;
             case QUEUE_full:
             printf("Error --> queue is full\n");
@@ -123,7 +132,7 @@ int main(void)
         switch(status)
         {
             case QUEUE_no_error:
-            printf("Done  --> Pop %.1f from queue_float\n", fdata);
+            printf("Done  --> Dequeue %.1f from queue_float\n", fdata);
             break;
             case QUEUE_empty:
             printf("Error --> queue is empty\n");
