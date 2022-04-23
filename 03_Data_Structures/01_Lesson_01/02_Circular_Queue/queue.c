@@ -125,7 +125,7 @@ queue_status_t queue_Top(queue_t* queue, void* data)
 queue_status_t queue_Print(queue_t* queue, void(*printFun)(void *, uint8_t))
 {
     /* Check null pointers */
-    if (queue == NULL || queue->base == NULL || queue->head == NULL || queue->tail == NULL)
+    if (queue == NULL || queue->base == NULL || queue->head == NULL || queue->tail == NULL || printFun == NULL)
         return QUEUE_null;
 
     /* Check if queue is aready empty */
