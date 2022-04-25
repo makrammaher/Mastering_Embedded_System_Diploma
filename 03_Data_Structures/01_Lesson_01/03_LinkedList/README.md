@@ -1,4 +1,4 @@
-# **Generic Queue Implementation**
+# **Generic Linked List Implementation**
 ## **Compile using GNU GCC Native tool chain**
 
 ```

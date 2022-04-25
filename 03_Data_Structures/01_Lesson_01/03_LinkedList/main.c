@@ -10,32 +10,14 @@
 #include <stdio.h>
 #include "linked_list.h"
 
-void LinkedList_print_float(void* ptr, uint8_t datasize, uint16_t num)
+void LinkedList_print_float(void* ptr, uint16_t num)
 {
-    uint8_t i;
-    float data;
-    uint8_t* PTRdata = (uint8_t*) &data;
-    for (i = 0; i < datasize; i++)
-    {
-        /* Copy data byte by byte from queue to data */
-        *((uint8_t*)PTRdata + i) = *((uint8_t*)ptr + i);
-    }
-
-    printf("%d --> %.3f\n", num, data);
+    printf("%d --> %.3f\n", num, *((float*)ptr));
 }
 
-void LinkedList_print_uint16(void* ptr, uint8_t datasize, uint16_t num)
+void LinkedList_print_uint16(void* ptr, uint16_t num)
 {
-    uint8_t i;
-    uint16_t data;
-    uint8_t* PTRdata = (uint8_t*) &data;
-    for (i = 0; i < datasize; i++)
-    {
-        /* Copy data byte by byte from queue to data */
-        *((uint8_t*)PTRdata + i) = *((uint8_t*)ptr + i);
-    }
-
-    printf("%d --> %d\n", num, data);
+    printf("%d --> %d\n", num, *((uint16_t*)ptr));
 }
 
 int main(void)
