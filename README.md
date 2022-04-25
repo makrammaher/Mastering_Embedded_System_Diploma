@@ -5,7 +5,7 @@
 ## **Contents**
 ### **First Term** ![image](https://progress-bar.dev/90/?title=In_Progress&color=daa520)
 1. Introduction ![image](https://progress-bar.dev/100/?title=Done)
-2.  [C Programming](01_C_Programming) [![image](https://progress-bar.dev/100/?title=Done)](01_C_Programming)
+2.  [C Programming](01_C_Programming) ![image](https://progress-bar.dev/100/?title=Done)
     1. [Basics](01_C_Programming/01_C_Basic)
     2. [Arrays & Strings](01_C_Programming/02_C_Array_Strings)
     3. [Functions](01_C_Programming/03_C_Functions)
@@ -13,12 +13,13 @@
     5. [Structure & Enumeration & Union](01_C_Programming/05_C_Struct_Enum_Union)
     6. [Pre-processor directives](01_C_Programming/06_C_Preprocessor_Directive)
     7. [Pointers](01_C_Programming/07_C_Pointers)
-3. [Embedded C](02_Embedded_C) ![image](https://progress-bar.dev/95/?title=In_Progress&color=daa520)
+3. [Embedded C](02_Embedded_C) ![image](https://progress-bar.dev/100/?title=Done)
     1. [Lesson 1](02_Embedded_C/01_Lesson_1)
     2. [Lesson 2](02_Embedded_C/02_Lesson_2)
     3. [Lesson 3](02_Embedded_C/03_Lesson_3)
     4. [Lesson 4](02_Embedded_C/04_Lesson_4)
-4. System Architecture ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
+4. System Architecture ![image](https://progress-bar.dev/35/?title=In_Progress&color=daa520)
+    1. [Lesson 1](03_Data_Structures/01_Lesson_01)
 5. First Term Project ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 
 ---
