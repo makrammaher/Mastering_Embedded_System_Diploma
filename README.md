@@ -20,7 +20,7 @@
     4. [Lesson 4](02_Embedded_C/04_Lesson_4)
 4. [System Architecture](03_Data_Structures) ![image](https://progress-bar.dev/35/?title=In_Progress&color=daa520)
     1. [Lesson 1](03_Data_Structures/01_Lesson_01)
-    2. [Lesson 1](03_Data_Structures/02_Lesson_02)
+    2. [Lesson 2](03_Data_Structures/02_Lesson_02)
 5. First Term Project ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 
 ---
