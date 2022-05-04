@@ -1,5 +1,5 @@
-# **Student Database using generic linked list Implementation**
-# **Project Report**: [**Click Here**](https://drive.google.com/file/d/14cXRDERM0i_FehP0fyAGaCjAIKeFAp_i/view?usp=sharing)
+# **First Term Project 2: Student Management Information System**
+## **Project Report**: [**Click Here**](https://drive.google.com/file/d/14cXRDERM0i_FehP0fyAGaCjAIKeFAp_i/view?usp=sharing)
 
 ## **Compile using GNU GCC Native tool chain**
 
