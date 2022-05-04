@@ -1,5 +1,6 @@
 # **First Term Project 2: Student Management Information System**
 ## **Project Report**: [**Click Here**](https://drive.google.com/file/d/14cXRDERM0i_FehP0fyAGaCjAIKeFAp_i/view?usp=sharing)
+[![Youtube Video](https://img.youtube.com/vi/ds8AWji7QNY/0.jpg)](https://youtu.be/ds8AWji7QNY) 
 
 ## **Compile using GNU GCC Native tool chain**
 
