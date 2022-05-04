@@ -12,6 +12,7 @@ gcc.exe -std=c89 -ansi -g -Wall -I . main.c student.c queue.c -o main.exe
 ./main.exe
 ```
 **Options Menu**
+
 <img src="/04_First_Term_Projects/02_Student_Database/img/00_MainMenu.jpg" >
 
 ---
