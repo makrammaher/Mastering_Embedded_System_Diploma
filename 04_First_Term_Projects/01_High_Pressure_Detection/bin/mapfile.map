@@ -1,0 +1,207 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+flash            0x08000000         0x00020000         xr
+sram             0x20000000         0x00005000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+.text           0x08000000      0x3b8
+ *(.vectors)
+ .vectors       0x08000000       0x1c ./obj/startup.o
+                0x08000000                g_p_Vectors
+ *(.text)
+ .text          0x0800001c       0xc8 ./obj/aa.o
+                0x0800001c                ST_AA_init
+                0x0800004c                ST_AA_alarm_off
+                0x08000074                ST_AA_alarm_on
+                0x080000bc                AA_start_alarm
+ .text          0x080000e4       0xc8 ./obj/driver.o
+                0x080000e4                Delay
+                0x08000106                getPressureVal
+                0x0800011c                Set_Alarm_actuator
+                0x0800015c                GPIO_INITIALIZATION
+ .text          0x080001ac       0xe0 ./obj/hpd.o
+                0x080001ac                ST_HPD_init
+                0x080001f0                ST_HPD_normal_pressure
+                0x0800023c                ST_HPD_high_pressure
+ .text          0x0800028c       0x28 ./obj/main.o
+                0x0800028c                main
+ .text          0x080002b4       0x74 ./obj/ps.o
+                0x080002b4                ST_PS_init
+                0x080002e4                ST_PS_busy
+                0x08000314                PS_get_pressure
+ .text          0x08000328       0x90 ./obj/startup.o
+                0x08000328                reset_handler
+                0x080003ac                default_handler
+                0x080003ac                usageFault_handler
+                0x080003ac                hardFault_handler
+                0x080003ac                busFault_handler
+                0x080003ac                MM_handler
+                0x080003ac                NMI_handler
+
+.glue_7         0x080003b8        0x0
+ .glue_7        0x080003b8        0x0 linker stubs
+
+.glue_7t        0x080003b8        0x0
+ .glue_7t       0x080003b8        0x0 linker stubs
+
+.vfp11_veneer   0x080003b8        0x0
+ .vfp11_veneer  0x080003b8        0x0 linker stubs
+
+.v4_bx          0x080003b8        0x0
+ .v4_bx         0x080003b8        0x0 linker stubs
+
+.iplt           0x080003b8        0x0
+ .iplt          0x080003b8        0x0 ./obj/aa.o
+
+.rel.dyn        0x080003b8        0x0
+ .rel.iplt      0x080003b8        0x0 ./obj/aa.o
+
+.rodata         0x080003b8        0x0
+ *(.rodata)
+                0x080003b8                _E_TEXT_ = .
+
+.data           0x20000000        0xc load address 0x080003b8
+                0x20000000                _S_DATA_ = .
+ *(.data)
+ .data          0x20000000        0x4 ./obj/aa.o
+                0x20000000                AA_state
+ .data          0x20000004        0x0 ./obj/driver.o
+ .data          0x20000004        0x4 ./obj/hpd.o
+                0x20000004                HPD_state
+ .data          0x20000008        0x0 ./obj/main.o
+ .data          0x20000008        0x4 ./obj/ps.o
+                0x20000008                PS_state
+ .data          0x2000000c        0x0 ./obj/startup.o
+                0x2000000c                . = ALIGN (0x4)
+                0x2000000c                _E_DATA_ = .
+
+.igot.plt       0x2000000c        0x0 load address 0x080003c4
+ .igot.plt      0x2000000c        0x0 ./obj/aa.o
+
+.bss            0x2000000c      0x410 load address 0x080003c4
+                0x2000000c                _S_BSS_ = .
+ *(.bss)
+ .bss           0x2000000c        0x8 ./obj/aa.o
+                0x2000000c                AA_state_id
+                0x20000010                timer
+ .bss           0x20000014        0x0 ./obj/driver.o
+ .bss           0x20000014        0x4 ./obj/hpd.o
+                0x20000014                HPD_state_id
+                0x20000015                threshold
+                0x20000016                pressure
+                0x20000017                alarmStatus
+ .bss           0x20000018        0x0 ./obj/main.o
+ .bss           0x20000018        0x2 ./obj/ps.o
+                0x20000018                PS_state_id
+                0x20000019                AA_pressure
+ .bss           0x2000001a        0x0 ./obj/startup.o
+                0x2000001c                . = ALIGN (0x4)
+ *fill*         0x2000001a        0x2 
+                0x2000001c                _E_BSS_ = .
+ *(.stack)
+ .stack         0x2000001c      0x400 ./obj/startup.o
+LOAD ./obj/aa.o
+LOAD ./obj/driver.o
+LOAD ./obj/hpd.o
+LOAD ./obj/main.o
+LOAD ./obj/ps.o
+LOAD ./obj/startup.o
+OUTPUT(bin/high-pressure-detector.elf elf32-littlearm)
+LOAD linker stubs
+
+.debug_info     0x00000000      0x7f6
+ .debug_info    0x00000000      0x184 ./obj/aa.o
+ .debug_info    0x00000184      0x11c ./obj/driver.o
+ .debug_info    0x000002a0      0x180 ./obj/hpd.o
+ .debug_info    0x00000420       0xc9 ./obj/main.o
+ .debug_info    0x000004e9      0x152 ./obj/ps.o
+ .debug_info    0x0000063b      0x1bb ./obj/startup.o
+
+.debug_abbrev   0x00000000      0x51d
+ .debug_abbrev  0x00000000       0xea ./obj/aa.o
+ .debug_abbrev  0x000000ea       0xc3 ./obj/driver.o
+ .debug_abbrev  0x000001ad       0xf6 ./obj/hpd.o
+ .debug_abbrev  0x000002a3       0x81 ./obj/main.o
+ .debug_abbrev  0x00000324      0x104 ./obj/ps.o
+ .debug_abbrev  0x00000428       0xf5 ./obj/startup.o
+
+.debug_loc      0x00000000      0x400
+ .debug_loc     0x00000000       0xc8 ./obj/aa.o
+ .debug_loc     0x000000c8      0x140 ./obj/driver.o
+ .debug_loc     0x00000208       0x9c ./obj/hpd.o
+ .debug_loc     0x000002a4       0x2c ./obj/main.o
+ .debug_loc     0x000002d0       0xb4 ./obj/ps.o
+ .debug_loc     0x00000384       0x7c ./obj/startup.o
+
+.debug_aranges  0x00000000       0xc0
+ .debug_aranges
+                0x00000000       0x20 ./obj/aa.o
+ .debug_aranges
+                0x00000020       0x20 ./obj/driver.o
+ .debug_aranges
+                0x00000040       0x20 ./obj/hpd.o
+ .debug_aranges
+                0x00000060       0x20 ./obj/main.o
+ .debug_aranges
+                0x00000080       0x20 ./obj/ps.o
+ .debug_aranges
+                0x000000a0       0x20 ./obj/startup.o
+
+.debug_line     0x00000000      0x590
+ .debug_line    0x00000000      0x107 ./obj/aa.o
+ .debug_line    0x00000107       0xf1 ./obj/driver.o
+ .debug_line    0x000001f8      0x114 ./obj/hpd.o
+ .debug_line    0x0000030c       0x76 ./obj/main.o
+ .debug_line    0x00000382       0xe6 ./obj/ps.o
+ .debug_line    0x00000468      0x128 ./obj/startup.o
+
+.debug_str      0x00000000      0x335
+ .debug_str     0x00000000      0x1a8 ./obj/aa.o
+                                0x20e (size before relaxing)
+ .debug_str     0x000001a8       0x39 ./obj/driver.o
+                                0x1c2 (size before relaxing)
+ .debug_str     0x000001e1       0x87 ./obj/hpd.o
+                                0x230 (size before relaxing)
+ .debug_str     0x00000268       0x15 ./obj/main.o
+                                0x18c (size before relaxing)
+ .debug_str     0x0000027d       0x3e ./obj/ps.o
+                                0x1d8 (size before relaxing)
+ .debug_str     0x000002bb       0x7a ./obj/startup.o
+                                0x1f5 (size before relaxing)
+
+.comment        0x00000000       0x57
+ .comment       0x00000000       0x57 ./obj/aa.o
+                                 0x58 (size before relaxing)
+ .comment       0x00000057       0x58 ./obj/driver.o
+ .comment       0x00000057       0x58 ./obj/hpd.o
+ .comment       0x00000057       0x58 ./obj/main.o
+ .comment       0x00000057       0x58 ./obj/ps.o
+ .comment       0x00000057       0x58 ./obj/startup.o
+
+.ARM.attributes
+                0x00000000       0x2d
+ .ARM.attributes
+                0x00000000       0x2d ./obj/aa.o
+ .ARM.attributes
+                0x0000002d       0x2d ./obj/driver.o
+ .ARM.attributes
+                0x0000005a       0x2d ./obj/hpd.o
+ .ARM.attributes
+                0x00000087       0x2d ./obj/main.o
+ .ARM.attributes
+                0x000000b4       0x2d ./obj/ps.o
+ .ARM.attributes
+                0x000000e1       0x2d ./obj/startup.o
+
+.debug_frame    0x00000000      0x274
+ .debug_frame   0x00000000       0x84 ./obj/aa.o
+ .debug_frame   0x00000084       0xa0 ./obj/driver.o
+ .debug_frame   0x00000124       0x68 ./obj/hpd.o
+ .debug_frame   0x0000018c       0x2c ./obj/main.o
+ .debug_frame   0x000001b8       0x6c ./obj/ps.o
+ .debug_frame   0x00000224       0x50 ./obj/startup.o
