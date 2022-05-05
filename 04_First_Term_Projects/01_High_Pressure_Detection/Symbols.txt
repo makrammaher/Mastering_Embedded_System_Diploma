@@ -1,0 +1,103 @@
+
+./bin/high-pressure-detector.elf:
+2000001c D _E_BSS_
+2000000c D _E_DATA_
+080003b8 D _E_TEXT_
+2000000c D _S_BSS_
+20000000 D _S_DATA_
+20000019 D AA_pressure
+080000bc T AA_start_alarm
+20000000 D AA_state
+2000000c D AA_state_id
+20000017 D alarmStatus
+080003ac W busFault_handler
+080003ac T default_handler
+080000e4 T Delay
+08000000 T g_p_Vectors
+08000106 T getPressureVal
+0800015c T GPIO_INITIALIZATION
+080003ac W hardFault_handler
+20000004 D HPD_state
+20000014 D HPD_state_id
+0800028c T main
+080003ac W MM_handler
+080003ac W NMI_handler
+20000016 D pressure
+08000314 T PS_get_pressure
+20000008 D PS_state
+20000018 D PS_state_id
+08000328 T reset_handler
+0800011c T Set_Alarm_actuator
+0800004c T ST_AA_alarm_off
+08000074 T ST_AA_alarm_on
+0800001c T ST_AA_init
+0800023c T ST_HPD_high_pressure
+080001ac T ST_HPD_init
+080001f0 T ST_HPD_normal_pressure
+080002e4 T ST_PS_busy
+080002b4 T ST_PS_init
+2000001c d Stack
+20000015 D threshold
+20000010 D timer
+080003ac W usageFault_handler
+
+./obj/aa.o:
+000000a0 T AA_start_alarm
+00000000 D AA_state
+00000000 B AA_state_id
+         U Set_Alarm_actuator
+00000030 T ST_AA_alarm_off
+00000058 T ST_AA_alarm_on
+00000000 T ST_AA_init
+00000004 B timer
+
+./obj/driver.o:
+00000000 T Delay
+00000022 T getPressureVal
+00000078 T GPIO_INITIALIZATION
+00000038 T Set_Alarm_actuator
+
+./obj/hpd.o:
+         U AA_start_alarm
+00000003 B alarmStatus
+00000000 D HPD_state
+00000000 B HPD_state_id
+00000002 B pressure
+         U PS_get_pressure
+00000090 T ST_HPD_high_pressure
+00000000 T ST_HPD_init
+00000044 T ST_HPD_normal_pressure
+00000001 B threshold
+
+./obj/main.o:
+         U AA_state
+         U GPIO_INITIALIZATION
+         U HPD_state
+00000000 T main
+         U PS_state
+
+./obj/ps.o:
+00000001 B AA_pressure
+         U getPressureVal
+00000060 T PS_get_pressure
+00000000 D PS_state
+00000000 B PS_state_id
+00000030 T ST_PS_busy
+00000000 T ST_PS_init
+
+./obj/startup.o:
+         U _E_BSS_
+         U _E_DATA_
+         U _E_TEXT_
+         U _S_BSS_
+         U _S_DATA_
+00000084 W busFault_handler
+00000084 T default_handler
+00000000 R g_p_Vectors
+00000084 W hardFault_handler
+         U main
+00000084 W MM_handler
+00000084 W NMI_handler
+00000000 T reset_handler
+00000000 d Stack
+00000084 W usageFault_handler
