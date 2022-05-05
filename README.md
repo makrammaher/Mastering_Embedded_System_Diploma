@@ -3,7 +3,7 @@
 [<img src="/99_Images/Learn_in_depth.jpg" >](https://www.learn-in-depth.com/online-diploma/makrammaher@hotmail.com)
 
 ## **Contents**
-### **First Term** ![image](https://progress-bar.dev/90/?title=In_Progress&color=daa520)
+### **First Term** ![image](https://progress-bar.dev/100/?title=Done)
 1. Introduction ![image](https://progress-bar.dev/100/?title=Done)
 2.  [C Programming](01_C_Programming) ![image](https://progress-bar.dev/100/?title=Done)
     1. [Basics](01_C_Programming/01_C_Basic)
@@ -18,13 +18,15 @@
     2. [Lesson 2](02_Embedded_C/02_Lesson_2)
     3. [Lesson 3](02_Embedded_C/03_Lesson_3)
     4. [Lesson 4](02_Embedded_C/04_Lesson_4)
-4. [System Architecture](03_Data_Structures) ![image](https://progress-bar.dev/35/?title=In_Progress&color=daa520)
+4. [System Architecture](03_Data_Structures) ![image](https://progress-bar.dev/100/?title=Done)
     1. [Lesson 1](03_Data_Structures/01_Lesson_01)
     2. [Lesson 2](03_Data_Structures/02_Lesson_02)
-5. First Term Project ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
+5. First Term Projects ![image](https://progress-bar.dev/100/?title=Done)
+    1. [High Pressure Detection System](04_First_Term_Projects/01_High_Pressure_Detection)
+    2. [Student Management Information System](04_First_Term_Projects/02_Student_Database)
 
 ---
-### **Second Term** ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
+### **Second Term** ![image](https://progress-bar.dev/1/?title=In_Progress&color=daa520)
 ---
 ### **Third Term** ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 
@@ -33,8 +35,8 @@
 [<img src="/99_Images/Progress.jpg" >](https://www.learn-in-depth.com/online-diploma/makrammaher@hotmail.com)
 **Term** |**Progress**
 -|-
-**First Term**|![image](https://progress-bar.dev/90/?title=In_Progress&color=daa520)
-**Second Term**|![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
+**First Term**|![image](https://progress-bar.dev/100/?title=Done)
+**Second Term**|![image](https://progress-bar.dev/1/?title=In_Progress&color=daa520)
 **Third Term**|![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 
 
