@@ -1,7 +1,7 @@
 # **First Term Project 1: High Pressure Detection System**
 ## **Project Report**: [**Click Here**](https://drive.google.com/drive/folders/1JGhN-RgvbcJBY-D6e57OH7A0ZVvnv5O5?usp=sharing)
 
-## **Project Video**: [**Click Here**](https://youtu.be/ds8AWji7QNY) 
+## **Project Video**: [**Click Here**](https://youtu.be/nzHynFw-XT4) 
 
 ## **Proteus Simulation**
 <img src="/04_First_Term_Projects/01_High_Pressure_Detection/img/Video.gif" >
