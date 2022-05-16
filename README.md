@@ -25,7 +25,6 @@
     1. [High Pressure Detection System](04_First_Term_Projects/01_High_Pressure_Detection)
     2. [Student Management Information System](04_First_Term_Projects/02_Student_Database)
 
-
 ---
 ### **Second Term** ![image](https://progress-bar.dev/1/?title=In_Progress&color=daa520)
 ---
