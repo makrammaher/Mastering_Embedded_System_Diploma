@@ -21,7 +21,7 @@
 4. [System Architecture](03_Data_Structures) ![image](https://progress-bar.dev/100/?title=Done)
     1. [Lesson 1](03_Data_Structures/01_Lesson_01)
     2. [Lesson 2](03_Data_Structures/02_Lesson_02)
-5. First Term Projects ![image](https://progress-bar.dev/100/?title=Done)
+5. [First Term Projects](04_First_Term_Projects) ![image](https://progress-bar.dev/100/?title=Done)
     1. [High Pressure Detection System](04_First_Term_Projects/01_High_Pressure_Detection)
     2. [Student Management Information System](04_First_Term_Projects/02_Student_Database)
 
