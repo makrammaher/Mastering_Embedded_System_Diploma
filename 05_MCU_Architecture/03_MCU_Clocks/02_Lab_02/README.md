@@ -6,4 +6,4 @@
 5. APB2_CLK = 8 MHz
 
 ## **Keil uVision Simulator RCC Prephiral**
-<img src="/05_MCU_Architecture/03_MCU_Clocks/02_Lab_02/img/Keil.jpg" >
+<img src="/05_MCU_Architecture/03_MCU_Clocks/02_Lab_02/img/Keil_New.jpg" >
