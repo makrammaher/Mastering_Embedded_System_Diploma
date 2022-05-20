@@ -14,4 +14,4 @@
 <img src="/05_MCU_Architecture/04_MCU_Interrupts/01_Lab_01/img/Keil.gif" >
 
 ## **Proteus Simulator**
-<img src="/05_MCU_Architecture/04_MCU_Interrupts/01_Lab_01/img/Keil.gif" >
+<img src="/05_MCU_Architecture/04_MCU_Interrupts/01_Lab_01/img/Proteus.gif" >
