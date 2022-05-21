@@ -31,7 +31,7 @@
     1. MCU Fundamentals 1
     2. MCU Fundamentals 2
     3. [MCU Clocks](05_MCU_Architecture/03_MCU_Clocks)
-    4. MCU Interrupts
+    4. [MCU Interrupts](05_MCU_Architecture/04_MCU_Interrupts)
 2. MCU Essential Peripherals ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 3. MCU Interfacing ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 4. MCU Timers / ADC ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
