@@ -26,13 +26,13 @@
     2. [Student Management Information System](04_First_Term_Projects/02_Student_Database)
 
 ---
-### **Second Term** ![image](https://progress-bar.dev/17/?title=In_Progress&color=daa520)
+### **Second Term** ![image](https://progress-bar.dev/20/?title=In_Progress&color=daa520)
 1. [MCU Architecture](05_MCU_Architecture) ![image](https://progress-bar.dev/100/?title=Done)
     1. MCU Fundamentals 1
     2. MCU Fundamentals 2
     3. [MCU Clocks](05_MCU_Architecture/03_MCU_Clocks)
     4. [MCU Interrupts](05_MCU_Architecture/04_MCU_Interrupts)
-2. MCU Essential Peripherals ![image]![image](https://progress-bar.dev/5/?title=In_Progress&color=daa520)
+2. MCU Essential Peripherals ![image](https://progress-bar.dev/5/?title=In_Progress&color=daa520)
 3. MCU Interfacing ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 4. MCU Timers / ADC ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 5. SW Engineering ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
@@ -45,7 +45,7 @@
 **Term** |**Progress**
 -|-
 **First Term**|![image](https://progress-bar.dev/100/?title=Done)
-**Second Term**|![image](https://progress-bar.dev/12/?title=In_Progress&color=daa520)
+**Second Term**|![image](https://progress-bar.dev/20/?title=In_Progress&color=daa520)
 **Third Term**|![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 
 
