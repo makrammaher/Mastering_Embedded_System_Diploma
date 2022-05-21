@@ -26,7 +26,7 @@
     2. [Student Management Information System](04_First_Term_Projects/02_Student_Database)
 
 ---
-### **Second Term** ![image](https://progress-bar.dev/12/?title=In_Progress&color=daa520)
+### **Second Term** ![image](https://progress-bar.dev/17/?title=In_Progress&color=daa520)
 1. [MCU Architecture](05_MCU_Architecture) ![image](https://progress-bar.dev/100/?title=Done)
     1. MCU Fundamentals 1
     2. MCU Fundamentals 2
