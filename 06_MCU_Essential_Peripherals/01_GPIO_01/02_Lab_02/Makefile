@@ -113,6 +113,14 @@ $(OUT_DIR_BIN):
 	mkdir -p $(OUT_DIR_BIN)
 
 ###################################################################################
+#Flash
+.PHONY: flash
+flash:
+	@echo ''
+	@echo '--> Flashing' $(OUT_BIN)
+	avrdude.exe -p atmega32a -P usb -c usbasp -U flash:w:$(OUT_BIN)
+
+###################################################################################
 #Clean
 
 .PHONY: clean
