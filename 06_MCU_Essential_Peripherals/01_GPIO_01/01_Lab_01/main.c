@@ -2,7 +2,7 @@
  *           File: main.c
  *     Created on: Thursday 19/05/2022 21:46
  *         Author: Makram Maher Makram
- *        Subject: STM32F103Cx MCU Interrupts
+ *        Subject: STM32F103Cx GPIO
  *
  *
  */
