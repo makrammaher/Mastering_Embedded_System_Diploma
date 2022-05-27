@@ -61,6 +61,6 @@ int main(void)
             break;
 
         }
-
+        wait_ms(3);
     }
 }
