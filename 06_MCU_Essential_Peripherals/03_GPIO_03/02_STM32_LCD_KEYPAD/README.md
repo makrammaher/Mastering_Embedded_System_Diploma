@@ -2,7 +2,7 @@
 ## Software Layers
 1. MCAL Layer
    1. GPIO Driver
-2. HAl Layer
+2. HAL Layer
    1. LCD Driver
    2. Keypad Driver
    3. 7 Seg. Driver
