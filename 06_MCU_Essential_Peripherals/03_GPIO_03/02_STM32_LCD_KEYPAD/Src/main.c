@@ -13,6 +13,7 @@
 
 int main(void)
 {
+    
     /* Initialization */
     RCC->CFGR |= (0b101 << 11);
     RCC->CFGR |= (0b100 << 8);
