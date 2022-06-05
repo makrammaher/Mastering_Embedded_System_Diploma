@@ -1,0 +1,263 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+flash            0x08000000         0x00020000         xr
+sram             0x20000000         0x00005000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+
+.text           0x08000000     0x1214
+ *(.vectors)
+ .vectors       0x08000000       0xec ./Debug/Startup/startup.o
+                0x08000000                g_p_Vectors
+ *(.text)
+ .text          0x080000ec      0x5e4 ./Debug/01_MCAL/EXIT/stm32f103c6-exti.o
+                0x080000ec                EXTI_GPIO_Init
+                0x08000102                EXTI_GPIO_Update
+                0x080002e0                EXTI_GPIO_Reset
+                0x08000494                EXTI0_handler
+                0x080004b8                EXTI1_handler
+                0x080004dc                EXTI2_handler
+                0x08000500                EXTI3_handler
+                0x08000524                EXTI4_handler
+                0x08000548                EXTI5_9_handler
+                0x0800060c                EXTI10_15_handler
+ .text          0x080006d0      0x2cc ./Debug/01_MCAL/GPIO/stm32f103c6-gpio.o
+                0x080006d0                GPIO_Init
+                0x080007a4                GPIO_Reset
+                0x080008a0                GPIO_Read_Pin
+                0x080008c8                GPIO_Read_Port
+                0x080008e0                GPIO_Write_Pin
+                0x0800090e                GPIO_Write_Port
+                0x0800092a                GPIO_Toggle_Pin
+                0x0800094c                GPIO_Lock_Pin
+ .text          0x0800099c      0x174 ./Debug/02_HAL/Keypad/keypad.o
+                0x0800099c                keypad_init
+                0x08000a24                keypad_getkey
+ .text          0x08000b10      0x5a0 ./Debug/02_HAL/LCD/lcd.o
+                0x08000b10                wait_ms
+                0x08000bb8                lcd_init
+                0x08000ca0                lcd_Send_Command
+                0x08000d5c                lcd_Send_Data
+                0x08000e18                swap
+                0x08000e40                reverse
+                0x08000e86                itoa
+                0x08000f50                lcd_Send_Num
+                0x08000f78                lcd_Goto_XY
+                0x08000fc2                lcd_Send_String
+                0x0800101c                lcd_Enable_Signal
+                0x08001048                lcd_Clear_Screen
+                0x08001056                lcd_Is_Busy
+ .text          0x080010b0       0xd4 ./Debug/main.o
+                0x080010b0                EXTIPB9_IRQ_Handler
+                0x080010d4                main
+ .text          0x08001184       0x90 ./Debug/Startup/startup.o
+                0x08001184                reset_handler
+                0x08001208                USART1_handler
+                0x08001208                CAN1_RX1_handler
+                0x08001208                NMI_handler
+                0x08001208                DMA1_C3_handler
+                0x08001208                TIM2_handler
+                0x08001208                USART2_handler
+                0x08001208                DMA1_C1_handler
+                0x08001208                TIM3_handler
+                0x08001208                RTCAlarm_handler
+                0x08001208                WWDG_handler
+                0x08001208                default_handler
+                0x08001208                SPI2_handler
+                0x08001208                SVCall_handler
+                0x08001208                TIM1_TRG_COM_handler
+                0x08001208                SysTick_handler
+                0x08001208                PVD_handler
+                0x08001208                usageFault_handler
+                0x08001208                hardFault_handler
+                0x08001208                RCC_handler
+                0x08001208                RTC_handler
+                0x08001208                I2C1_ER_handler
+                0x08001208                I2C2_EV_handler
+                0x08001208                DMA1_C7_handler
+                0x08001208                OTG_FS_WKUP_handler
+                0x08001208                FLASH_handler
+                0x08001208                I2C2_ER_handler
+                0x08001208                TIM1_UP_handler
+                0x08001208                busFault_handler
+                0x08001208                TIM1_BRK_handler
+                0x08001208                TIM4_handler
+                0x08001208                CAN1_TX_handler
+                0x08001208                DMA1_C2_handler
+                0x08001208                DMA1_C4_handler
+                0x08001208                I2C1_EV_handler
+                0x08001208                CAN1_RX0_handler
+                0x08001208                SPI1_handler
+                0x08001208                PendSV_handler
+                0x08001208                DMA1_C5_handler
+                0x08001208                debugMonitor_handler
+                0x08001208                ADC1_2_handler
+                0x08001208                TAMPER_handler
+                0x08001208                DMA1_C6_handler
+                0x08001208                MM_handler
+                0x08001208                CAN1_SCE_handler
+                0x08001208                TIM1_CC_handler
+                0x08001208                reserved_handler
+                0x08001208                USART3_handler
+
+.glue_7         0x08001214        0x0
+ .glue_7        0x08001214        0x0 linker stubs
+
+.glue_7t        0x08001214        0x0
+ .glue_7t       0x08001214        0x0 linker stubs
+
+.vfp11_veneer   0x08001214        0x0
+ .vfp11_veneer  0x08001214        0x0 linker stubs
+
+.v4_bx          0x08001214        0x0
+ .v4_bx         0x08001214        0x0 linker stubs
+
+.iplt           0x08001214        0x0
+ .iplt          0x08001214        0x0 ./Debug/01_MCAL/EXIT/stm32f103c6-exti.o
+
+.rodata         0x08001214       0x28
+ *(.rodata)
+ .rodata        0x08001214       0x28 ./Debug/main.o
+                0x0800123c                _E_TEXT_ = .
+
+.rel.dyn        0x0800123c        0x0
+ .rel.iplt      0x0800123c        0x0 ./Debug/01_MCAL/EXIT/stm32f103c6-exti.o
+
+.data           0x20000000       0x20 load address 0x0800123c
+                0x20000000                _S_DATA_ = .
+ *(.data)
+ .data          0x20000000        0x0 ./Debug/01_MCAL/EXIT/stm32f103c6-exti.o
+ .data          0x20000000        0x0 ./Debug/01_MCAL/GPIO/stm32f103c6-gpio.o
+ .data          0x20000000       0x20 ./Debug/02_HAL/Keypad/keypad.o
+                0x20000000                keypad_keys
+                0x20000010                keypad_rows
+                0x20000018                keypad_columns
+ .data          0x20000020        0x0 ./Debug/02_HAL/LCD/lcd.o
+ .data          0x20000020        0x0 ./Debug/main.o
+ .data          0x20000020        0x0 ./Debug/Startup/startup.o
+                0x20000020                . = ALIGN (0x4)
+                0x20000020                _E_DATA_ = .
+
+.igot.plt       0x20000020        0x0 load address 0x0800125c
+ .igot.plt      0x20000020        0x0 ./Debug/01_MCAL/EXIT/stm32f103c6-exti.o
+
+.bss            0x20000020      0x440 load address 0x0800125c
+                0x20000020                _S_BSS_ = .
+ *(.bss)
+ .bss           0x20000020       0x3c ./Debug/01_MCAL/EXIT/stm32f103c6-exti.o
+                0x20000020                GP_IRQ_CallBack
+ .bss           0x2000005c        0x0 ./Debug/01_MCAL/GPIO/stm32f103c6-gpio.o
+ .bss           0x2000005c        0x1 ./Debug/02_HAL/Keypad/keypad.o
+ .bss           0x2000005d        0x0 ./Debug/02_HAL/LCD/lcd.o
+ .bss           0x2000005d        0x1 ./Debug/main.o
+                0x2000005d                G_IRQ_Flag
+ .bss           0x2000005e        0x0 ./Debug/Startup/startup.o
+                0x20000060                . = ALIGN (0x4)
+ *fill*         0x2000005e        0x2 
+                0x20000060                _E_BSS_ = .
+ *(.stack)
+ .stack         0x20000060      0x400 ./Debug/Startup/startup.o
+LOAD ./Debug/01_MCAL/EXIT/stm32f103c6-exti.o
+LOAD ./Debug/01_MCAL/GPIO/stm32f103c6-gpio.o
+LOAD ./Debug/02_HAL/Keypad/keypad.o
+LOAD ./Debug/02_HAL/LCD/lcd.o
+LOAD ./Debug/main.o
+LOAD ./Debug/Startup/startup.o
+OUTPUT(Debug/MCU-EXIT-DRIVER.elf elf32-littlearm)
+LOAD linker stubs
+
+.debug_info     0x00000000     0x168f
+ .debug_info    0x00000000      0x4b3 ./Debug/01_MCAL/EXIT/stm32f103c6-exti.o
+ .debug_info    0x000004b3      0x414 ./Debug/01_MCAL/GPIO/stm32f103c6-gpio.o
+ .debug_info    0x000008c7      0x2b4 ./Debug/02_HAL/Keypad/keypad.o
+ .debug_info    0x00000b7b      0x501 ./Debug/02_HAL/LCD/lcd.o
+ .debug_info    0x0000107c      0x458 ./Debug/main.o
+ .debug_info    0x000014d4      0x1bb ./Debug/Startup/startup.o
+
+.debug_abbrev   0x00000000      0x7f1
+ .debug_abbrev  0x00000000      0x17b ./Debug/01_MCAL/EXIT/stm32f103c6-exti.o
+ .debug_abbrev  0x0000017b      0x114 ./Debug/01_MCAL/GPIO/stm32f103c6-gpio.o
+ .debug_abbrev  0x0000028f      0x137 ./Debug/02_HAL/Keypad/keypad.o
+ .debug_abbrev  0x000003c6      0x1c7 ./Debug/02_HAL/LCD/lcd.o
+ .debug_abbrev  0x0000058d      0x16f ./Debug/main.o
+ .debug_abbrev  0x000006fc       0xf5 ./Debug/Startup/startup.o
+
+.debug_loc      0x00000000      0xb04
+ .debug_loc     0x00000000      0x2e8 ./Debug/01_MCAL/EXIT/stm32f103c6-exti.o
+ .debug_loc     0x000002e8      0x2e0 ./Debug/01_MCAL/GPIO/stm32f103c6-gpio.o
+ .debug_loc     0x000005c8       0x7c ./Debug/02_HAL/Keypad/keypad.o
+ .debug_loc     0x00000644      0x3e0 ./Debug/02_HAL/LCD/lcd.o
+ .debug_loc     0x00000a24       0x64 ./Debug/main.o
+ .debug_loc     0x00000a88       0x7c ./Debug/Startup/startup.o
+
+.debug_aranges  0x00000000       0xc0
+ .debug_aranges
+                0x00000000       0x20 ./Debug/01_MCAL/EXIT/stm32f103c6-exti.o
+ .debug_aranges
+                0x00000020       0x20 ./Debug/01_MCAL/GPIO/stm32f103c6-gpio.o
+ .debug_aranges
+                0x00000040       0x20 ./Debug/02_HAL/Keypad/keypad.o
+ .debug_aranges
+                0x00000060       0x20 ./Debug/02_HAL/LCD/lcd.o
+ .debug_aranges
+                0x00000080       0x20 ./Debug/main.o
+ .debug_aranges
+                0x000000a0       0x20 ./Debug/Startup/startup.o
+
+.debug_line     0x00000000      0xddd
+ .debug_line    0x00000000      0x3be ./Debug/01_MCAL/EXIT/stm32f103c6-exti.o
+ .debug_line    0x000003be      0x234 ./Debug/01_MCAL/GPIO/stm32f103c6-gpio.o
+ .debug_line    0x000005f2      0x1b2 ./Debug/02_HAL/Keypad/keypad.o
+ .debug_line    0x000007a4      0x386 ./Debug/02_HAL/LCD/lcd.o
+ .debug_line    0x00000b2a      0x180 ./Debug/main.o
+ .debug_line    0x00000caa      0x133 ./Debug/Startup/startup.o
+
+.debug_str      0x00000000      0x654
+ .debug_str     0x00000000      0x329 ./Debug/01_MCAL/EXIT/stm32f103c6-exti.o
+                                0x381 (size before relaxing)
+ .debug_str     0x00000329       0xec ./Debug/01_MCAL/GPIO/stm32f103c6-gpio.o
+                                0x2ab (size before relaxing)
+ .debug_str     0x00000415       0x80 ./Debug/02_HAL/Keypad/keypad.o
+                                0x257 (size before relaxing)
+ .debug_str     0x00000495       0xfe ./Debug/02_HAL/LCD/lcd.o
+                                0x300 (size before relaxing)
+ .debug_str     0x00000593       0x3d ./Debug/main.o
+                                0x340 (size before relaxing)
+ .debug_str     0x000005d0       0x84 ./Debug/Startup/startup.o
+                                0x207 (size before relaxing)
+
+.comment        0x00000000       0x57
+ .comment       0x00000000       0x57 ./Debug/01_MCAL/EXIT/stm32f103c6-exti.o
+                                 0x58 (size before relaxing)
+ .comment       0x00000057       0x58 ./Debug/01_MCAL/GPIO/stm32f103c6-gpio.o
+ .comment       0x00000057       0x58 ./Debug/02_HAL/Keypad/keypad.o
+ .comment       0x00000057       0x58 ./Debug/02_HAL/LCD/lcd.o
+ .comment       0x00000057       0x58 ./Debug/main.o
+ .comment       0x00000057       0x58 ./Debug/Startup/startup.o
+
+.ARM.attributes
+                0x00000000       0x2d
+ .ARM.attributes
+                0x00000000       0x2d ./Debug/01_MCAL/EXIT/stm32f103c6-exti.o
+ .ARM.attributes
+                0x0000002d       0x2d ./Debug/01_MCAL/GPIO/stm32f103c6-gpio.o
+ .ARM.attributes
+                0x0000005a       0x2d ./Debug/02_HAL/Keypad/keypad.o
+ .ARM.attributes
+                0x00000087       0x2d ./Debug/02_HAL/LCD/lcd.o
+ .ARM.attributes
+                0x000000b4       0x2d ./Debug/main.o
+ .ARM.attributes
+                0x000000e1       0x2d ./Debug/Startup/startup.o
+
+.debug_frame    0x00000000      0x5ac
+ .debug_frame   0x00000000      0x194 ./Debug/01_MCAL/EXIT/stm32f103c6-exti.o
+ .debug_frame   0x00000194      0x150 ./Debug/01_MCAL/GPIO/stm32f103c6-gpio.o
+ .debug_frame   0x000002e4       0x50 ./Debug/02_HAL/Keypad/keypad.o
+ .debug_frame   0x00000334      0x1dc ./Debug/02_HAL/LCD/lcd.o
+ .debug_frame   0x00000510       0x4c ./Debug/main.o
+ .debug_frame   0x0000055c       0x50 ./Debug/Startup/startup.o
