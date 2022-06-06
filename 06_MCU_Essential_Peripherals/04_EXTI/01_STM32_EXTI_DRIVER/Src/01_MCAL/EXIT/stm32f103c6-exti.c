@@ -102,6 +102,23 @@ void EXTI_GPIO_Update(EXTI_PinConfig_t *PinConfig)
  */
 void EXTI_GPIO_Reset(uint8_t EXTIx)
 {
+    /* Disable Mask in EXTI */
+    EXTI->IMR &= ~(1 << EXTIx);
+    /* Disable Mask in NVIC */
+    Disable_NVIC(EXTIx);
+
+    /* Disable Trigger in Rising, Falling Registers */
+    EXTI->RTSR &= ~(1 << EXTIx);
+    EXTI->FTSR &= ~(1 << EXTIx);
+    
+    /* Update Interrupt IRQ Callback to be NULL */
+    GP_IRQ_CallBack[EXTIx] = 0;
+
+    /* Route AFIO to Default GPIOx */
+    uint8_t AFIO_EXTICR_index = (uint8_t)EXTIx / 4;
+    uint8_t AFIO_EXTICR_position = (EXTIx % 4) * 4;
+
+    AFIO->EXTICR[AFIO_EXTICR_index] &= ~(0x0F << AFIO_EXTICR_position);
 }
 
 static void Enable_NVIC(uint8_t EXTIx)
@@ -187,9 +204,9 @@ static void Disable_NVIC(uint8_t EXTIx)
 void EXTI0_handler(void)
 {
     /* Clear By Writing "1" into the bit Pending Register (EXTI_PR) */
-	EXTI->PR |= (1 << EXTI0);
-	/* Call IRQ_CallBack */
-	GP_IRQ_CallBack[EXTI0]();
+    EXTI->PR |= (1 << EXTI0);
+    /* Call IRQ_CallBack */
+    GP_IRQ_CallBack[EXTI0]();
 }
 
 void EXTI1_handler(void)
@@ -218,34 +235,34 @@ void EXTI4_handler(void)
 
 void EXTI5_9_handler(void)
 {
-    if(EXTI->PR & (1<<EXTI5))
+    if (EXTI->PR & (1 << EXTI5))
     {
         EXTI->PR |= (1 << EXTI5);
         GP_IRQ_CallBack[EXTI5]();
     }
-    if(EXTI->PR & (1<<EXTI6))
+    if (EXTI->PR & (1 << EXTI6))
     {
         EXTI->PR |= (1 << EXTI6);
         GP_IRQ_CallBack[EXTI6]();
     }
-    if(EXTI->PR & (1<<EXTI6))
+    if (EXTI->PR & (1 << EXTI6))
     {
         EXTI->PR |= (1 << EXTI6);
         GP_IRQ_CallBack[EXTI6]();
     }
-    if(EXTI->PR & (1<<EXTI7))
+    if (EXTI->PR & (1 << EXTI7))
     {
         EXTI->PR |= (1 << EXTI7);
         GP_IRQ_CallBack[EXTI7]();
     }
-    if(EXTI->PR & (1<<EXTI8))
+    if (EXTI->PR & (1 << EXTI8))
     {
         EXTI->PR |= (1 << EXTI8);
         GP_IRQ_CallBack[EXTI8]();
     }
-    if(EXTI->PR & (1<<EXTI9))
+    if (EXTI->PR & (1 << EXTI9))
     {
-        
+
         GP_IRQ_CallBack[EXTI9]();
         EXTI->PR |= (1 << EXTI9);
     }
@@ -253,32 +270,32 @@ void EXTI5_9_handler(void)
 
 void EXTI10_15_handler(void)
 {
-    if(EXTI->PR & (1<<EXTI10))
+    if (EXTI->PR & (1 << EXTI10))
     {
         EXTI->PR |= (1 << EXTI10);
         GP_IRQ_CallBack[EXTI10]();
     }
-    if(EXTI->PR & (1<<EXTI11))
+    if (EXTI->PR & (1 << EXTI11))
     {
         EXTI->PR |= (1 << EXTI11);
         GP_IRQ_CallBack[EXTI11]();
     }
-    if(EXTI->PR & (1<<EXTI12))
+    if (EXTI->PR & (1 << EXTI12))
     {
         EXTI->PR |= (1 << EXTI12);
         GP_IRQ_CallBack[EXTI12]();
     }
-    if(EXTI->PR & (1<<EXTI13))
+    if (EXTI->PR & (1 << EXTI13))
     {
         EXTI->PR |= (1 << EXTI13);
         GP_IRQ_CallBack[EXTI13]();
     }
-    if(EXTI->PR & (1<<EXTI14))
+    if (EXTI->PR & (1 << EXTI14))
     {
         EXTI->PR |= (1 << EXTI14);
         GP_IRQ_CallBack[EXTI14]();
     }
-    if(EXTI->PR & (1<<EXTI15))
+    if (EXTI->PR & (1 << EXTI15))
     {
         EXTI->PR |= (1 << EXTI15);
         GP_IRQ_CallBack[EXTI15]();
