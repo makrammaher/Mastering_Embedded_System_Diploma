@@ -32,12 +32,12 @@
     2. MCU Fundamentals 2
     3. [MCU Clocks](05_MCU_Architecture/03_MCU_Clocks)
     4. [MCU Interrupts](05_MCU_Architecture/04_MCU_Interrupts)
-2. [MCU Essential Peripherals](06_MCU_Essential_Peripherals) ![image](https://progress-bar.dev/95/?title=In_Progress&color=daa520)
+2. [MCU Essential Peripherals](06_MCU_Essential_Peripherals) ![image](https://progress-bar.dev/100/?title=Done)
     1. [GPIO 1](06_MCU_Essential_Peripherals/01_GPIO_01)
     2. [GPIO 2](06_MCU_Essential_Peripherals/02_GPIO_02)
     3. [GPIO 3](06_MCU_Essential_Peripherals/03_GPIO_03)
     4. [EXTI](06_MCU_Essential_Peripherals/04_EXTI)
-3. MCU Interfacing ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
+3. MCU Interfacing ![image](https://progress-bar.dev/5/?title=In_Progress&color=daa520)
 4. MCU Timers / ADC ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 5. SW Engineering ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 ---
