@@ -38,6 +38,13 @@
     3. [GPIO 3](06_MCU_Essential_Peripherals/03_GPIO_03)
     4. [EXTI](06_MCU_Essential_Peripherals/04_EXTI)
 3. MCU Interfacing ![image](https://progress-bar.dev/5/?title=In_Progress&color=daa520)
+   1. Electrical Characteristics
+   2. [USART 1](07_MCU_Interfacing/02_UART_01)
+   3. USART 2
+   4. SPI 1
+   5. SPI 2
+   6. I2C 1
+   7. I2C 2
 4. MCU Timers / ADC ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 5. SW Engineering ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 ---
