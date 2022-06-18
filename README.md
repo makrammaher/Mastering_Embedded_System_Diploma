@@ -40,7 +40,7 @@
 3. MCU Interfacing ![image](https://progress-bar.dev/5/?title=In_Progress&color=daa520)
    1. Electrical Characteristics
    2. [USART 1](07_MCU_Interfacing/02_UART_01)
-   3. USART 2
+   3. [USART 2](07_MCU_Interfacing/03_UART_02)
    4. SPI 1
    5. SPI 2
    6. I2C 1
