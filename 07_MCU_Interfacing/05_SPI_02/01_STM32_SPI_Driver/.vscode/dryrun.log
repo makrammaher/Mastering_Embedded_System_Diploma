@@ -1,0 +1,14 @@
+make.exe --dry-run --keep-going --print-directory
+make: Entering directory '/cygdrive/e/Mastering Embedded System Diploma/github_repo/07_MCU_Interfacing/05_SPI_02/01_STM32_SPI_Driver'
+ 
+echo ''
+echo '--> Linking' ./Debug/01_MCAL/EXIT/stm32f103c6-exti.o ./Debug/01_MCAL/GPIO/stm32f103c6-gpio.o ./Debug/01_MCAL/RCC/stm32f103c6-rcc.o ./Debug/01_MCAL/SPI/stm32f103c6-spi.o ./Debug/01_MCAL/USART/stm32f103c6-usart.o ./Debug/02_HAL/Keypad/keypad.o ./Debug/02_HAL/LCD/lcd.o ./Debug/main.o ./Debug/Startup/startup.o 
+arm-none-eabi-ld.exe -T linker_script.ld ./Debug/01_MCAL/EXIT/stm32f103c6-exti.o ./Debug/01_MCAL/GPIO/stm32f103c6-gpio.o ./Debug/01_MCAL/RCC/stm32f103c6-rcc.o ./Debug/01_MCAL/SPI/stm32f103c6-spi.o ./Debug/01_MCAL/USART/stm32f103c6-usart.o ./Debug/02_HAL/Keypad/keypad.o ./Debug/02_HAL/LCD/lcd.o ./Debug/main.o ./Debug/Startup/startup.o  -o Debug/MCU-SPI-Driver-Slave.elf -Map=./Debug/mapfile.map
+cp ./Debug/MCU-SPI-Driver-Slave.elf ./Debug/MCU-SPI-Driver-Slave.axf
+ 
+echo ''
+echo '--> Strip' Debug/MCU-SPI-Driver-Slave.elf
+arm-none-eabi-objcopy.exe -O binary Debug/MCU-SPI-Driver-Slave.elf Debug/MCU-SPI-Driver-Slave.bin
+echo "========================( BUILD IS DONE )========================="
+make: Leaving directory '/cygdrive/e/Mastering Embedded System Diploma/github_repo/07_MCU_Interfacing/05_SPI_02/01_STM32_SPI_Driver'
+ 

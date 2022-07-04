@@ -37,7 +37,7 @@
     2. [GPIO 2](06_MCU_Essential_Peripherals/02_GPIO_02)
     3. [GPIO 3](06_MCU_Essential_Peripherals/03_GPIO_03)
     4. [EXTI](06_MCU_Essential_Peripherals/04_EXTI)
-3. MCU Interfacing ![image](https://progress-bar.dev/60/?title=In_Progress&color=daa520)
+3. MCU Interfacing ![image](https://progress-bar.dev/75/?title=In_Progress&color=daa520)
    1. Electrical Characteristics
    2. [USART 1](07_MCU_Interfacing/02_UART_01)
    3. [USART 2](07_MCU_Interfacing/03_UART_02)

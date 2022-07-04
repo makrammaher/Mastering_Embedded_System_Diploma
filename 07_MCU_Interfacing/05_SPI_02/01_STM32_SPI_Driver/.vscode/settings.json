@@ -1,0 +1,8 @@
+{
+    "makefile.extensionOutputFolder": "./.vscode",
+    "files.associations": {
+        "*.c": "c",
+        "Makefile": "makefile",
+        "stm32f103c6-usart.h": "c"
+    }
+}

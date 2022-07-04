@@ -1,0 +1,1044 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-cygwin
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+ 
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+# Make data base, printed on Mon Jul  4 05:59:06 2022
+
+# Variables
+
+# makefile (from 'Makefile', line 107)
+OUT_MAP = $(DEBUG_DIR)/mapfile.map
+# environment
+SYSTEMDRIVE = C:
+# environment
+LC_ALL = C
+# environment
+USERPROFILE = C:\Users\makra
+# makefile (from 'Makefile', line 83)
+C_OBJ_DIRS := ./Debug/01_MCAL/EXIT/ ./Debug/01_MCAL/GPIO/ ./Debug/01_MCAL/RCC/ ./Debug/01_MCAL/SPI/ ./Debug/01_MCAL/USART/ ./Debug/02_HAL/Keypad/ ./Debug/02_HAL/LCD/ ./Debug/ ./Debug/Startup/
+# environment
+LOCALAPPDATA = C:\Users\makra\AppData\Local
+# environment
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-39e21e1e-b16e-46b6-8699-9f015ec62375-sock
+# environment
+WSLENV = WT_SESSION::WT_PROFILE_ID
+# makefile (from 'Makefile', line 100)
+VPATH = $(C_SRC_DIRS) $(AS_SRC_DIRS)
+# environment
+VSCODE_CWD = E:\Mastering Embedded System Diploma\github_repo\07_MCU_Interfacing\05_SPI_02\01_STM32_SPI_Driver
+# environment
+CARBON_MEM_DISABLE = 1
+ 
+# environment
+SYSTEMROOT = C:\Windows
+# makefile (from 'Makefile', line 65)
+LIBS = 
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := make
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# makefile (from 'Makefile', line 85)
+C_OBJ = $(subst ./Startup/,./Debug/Startup/,$(C_OB))
+# makefile (from 'Makefile', line 86)
+C_DEPS = $(C_OBJ:.o=.d)
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_14216_TSUOVGTEYQWNIHCO
+# makefile (from 'Makefile', line 105)
+OUT_AXF = $(DEBUG_DIR)/$(PRJ_Name).axf
+# environment
+!E: = e:\Mastering Embedded System Diploma\github_repo\07_MCU_Interfacing\05_SPI_02\01_STM32_SPI_Driver
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# makefile (from 'Makefile', line 58)
+INCS_DIRS = $(shell find ./ -type d -name 'Inc')
+# default
+.VARIABLES := 
+# environment
+PWD = /cygdrive/e/Mastering Embedded System Diploma/github_repo/07_MCU_Interfacing/05_SPI_02/01_STM32_SPI_Driver
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# makefile (from 'Makefile', line 94)
+AS_OBJ_DIRS := 
+# environment
+HOSTNAME = MakramLaptop
+# makefile (from 'Makefile', line 84)
+C_OB = $(subst $(SOURCE_DIR),$(DEBUG_DIR),$(C_SRC:.c=.o))
+# makefile (from 'Makefile', line 93)
+AS_OBJ_D := 
+# environment
+OLDPWD = /cygdrive/e
+ 
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\makra\AppData\Roaming\Code\CachedData\30d9c6cd9483b2cc586687151bcbcd635f373630
+# environment
+PROFILEREAD = true
+# environment
+LANG = C
+# default
+.LOADED := 
+# environment
+TMP = /tmp
+# default
+.INCLUDE_DIRS = /usr/include /usr/include
+# makefile (from 'Makefile', line 97)
+AS_DEPS = $(AS_OBJ:.o=.d)
+# makefile
+MAKEFLAGS = pqrR
+# makefile (from 'Makefile', line 80)
+C_SRC = $(shell find ./ -type f -name '*.c')
+# environment
+ONEDRIVE = D:\User Data\OneDrive
+# makefile (from 'Makefile', line 95)
+AS_OB = $(subst $(SOURCE_DIR),$(DEBUG_DIR),$(AS_SRC:.s=.o))
+# makefile
+CURDIR := /cygdrive/e/Mastering Embedded System Diploma/github_repo/07_MCU_Interfacing/05_SPI_02/01_STM32_SPI_Driver
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+ 
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+PROGRAMFILES = C:\Program Files
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from 'Debug/Startup/startup.d', line 1)
+MAKEFILE_LIST := Makefile Debug/01_MCAL/EXIT/stm32f103c6-exti.d Debug/01_MCAL/GPIO/stm32f103c6-gpio.d Debug/01_MCAL/RCC/stm32f103c6-rcc.d Debug/01_MCAL/SPI/stm32f103c6-spi.d Debug/01_MCAL/USART/stm32f103c6-usart.d Debug/02_HAL/Keypad/keypad.d Debug/02_HAL/LCD/lcd.d Debug/main.d Debug/Startup/startup.d
+# automatic
+@F = $(notdir $@)
+# makefile (from 'Makefile', line 104)
+OUT_ELF = $(DEBUG_DIR)/$(PRJ_Name).elf
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 14216
+# makefile (from 'Makefile', line 70)
+WARR = -Wall
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+WT_PROFILE_ID = {f5bc0c9f-79de-4ff2-bc7d-6092ac98bfe3}
+# automatic
+ 
+*F = $(notdir $*)
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# environment
+ONEDRIVECONSUMER = D:\User Data\OneDrive
+# default
+MAKE_HOST := x86_64-pc-cygwin
+# environment
+PROGRAMDATA = C:\ProgramData
+# environment
+INFOPATH = /usr/local/info:/usr/share/info:/usr/info
+# makefile
+SHELL = /bin/sh
+# environment
+ORIGINAL_PATH = /cygdrive/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/cygdrive/c/Program Files (x86)/Intel/iCLS Client:/cygdrive/c/Program Files/Intel/iCLS Client:/cygdrive/c/Windows/system32:/cygdrive/c/Windows:/cygdrive/c/Windows/System32/Wbem:/cygdrive/c/Windows/System32/WindowsPowerShell/v1.0:/cygdrive/c/Windows/System32/OpenSSH:/cygdrive/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/cygdrive/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/cygdrive/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/cygdrive/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/cygdrive/c/Users/makra/AppData/Local/Microsoft/WindowsApps:/cygdrive/e/Mastering Embedded System Diploma/Software/Microsoft VS Code/bin:/cygdrive/c/Program Files/Sublime Text:/cygdrive/c/MinGW/bin:/usr/bin:/cygdrive/c/Program Files/Git/cmd:/cygdrive/c/Python27
+# makefile (from 'Makefile', line 96)
+AS_OBJ = $(subst ./Startup/,./Debug/Startup/,$(AS_OB))
+# environment
+HOMEPATH = \Users\makra
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 2
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+COMSPEC = C:\Windows\system32\cmd.exe
+# environment
+WINDIR = C:\Windows
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /cygdrive/c/arm-toolchain/bin:/usr/local/bin:/usr/bin:/cygdrive/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/cygdrive/c/Program Files (x86)/Intel/iCLS Client:/cygdrive/c/Program Files/Intel/iCLS Client:/cygdrive/c/Windows/system32:/cygdrive/c/Windows:/cygdrive/c/Windows/System32/Wbem:/cygdrive/c/Windows/System32/WindowsPowerShell/v1.0:/cygdrive/c/Windows/System32/OpenSSH:/cygdrive/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/DAL:/cygdrive/c/Program Files/Intel/Intel(R) Management Engine Components/DAL:/cygdrive/c/Program Files (x86)/Intel/Intel(R) Management Engine Components/IPT:/cygdrive/c/Program Files/Intel/Intel(R) Management Engine Components/IPT:/cygdrive/c/Users/makra/AppData/Local/Microsoft/WindowsApps:/cygdrive/e/Mastering Embedded System Diploma/Software/Microsoft VS Code/bin:/cygdrive/c/Program Files/Sublime Text:/cygdrive/c/MinGW/bin:/usr/bin:/cygdrive/c/Program Files/Git/cmd:/cygdrive/c/Python27
+# environment
+ 
+ZES_ENABLE_SYSMAN = 1
+# makefile (from 'Makefile', line 44)
+MCPU = -mcpu=cortex-m3
+# environment
+COMPUTERNAME = MAKRAMLAPTOP
+# default
+MAKEFILES := 
+# makefile (from 'Makefile', line 91)
+AS_SRC = $(shell find ./ -type f -name '*.s')
+# automatic
+^F = $(notdir $^)
+# environment
+PROMPT = $P$G
+# environment
+WT_SESSION = a62963ec-689f-4177-a0bd-f71e337114f8
+# environment
+TZ = Africa/Cairo
+# makefile (from 'Makefile', line 59)
+INCS = $(foreach dir, $(INCS_DIRS) $(C_SRC_DIRS), $(addprefix -I, $(dir)))
+# environment
+LOGONSERVER = \\MAKRAMLAPTOP
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = makra
+# environment
+COMMONPROGRAMFILES = C:\Program Files\Common Files
+# environment
+PRINTER = Microsoft Print to PDF
+# makefile (from 'Makefile', line 10)
+PRJ_Name = MCU-SPI-Driver-Slave
+# automatic
+?F = $(notdir $?)
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# automatic
++F = $(notdir $+)
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERDOMAIN = MAKRAMLAPTOP
+# 'override' directive
+GNUMAKEFLAGS := 
+# makefile (from 'Makefile', line 81)
+C_SRC_DIRS = $(dir $(C_SRC))
+# environment
+OS = Windows_NT
+# makefile (from 'Makefile', line 75)
+LINKER_SCR = linker_script.ld
+# makefile (from 'Makefile', line 15)
+SOURCE_DIR := ./Src
+# environment
+EXECIGNORE = *.dll
+# makefile
+.DEFAULT_GOAL := all
+# environment
+ 
+USER = makra
+# default
+MAKE_VERSION := 4.3
+# 'override' directive
+.SHELLSTATUS := 0
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# environment
+USERDOMAIN_ROAMINGPROFILE = MAKRAMLAPTOP
+# environment
+NUMBER_OF_PROCESSORS = 8
+# environment
+PUBLIC = C:\Users\Public
+# makefile (from 'Makefile', line 82)
+C_OBJ_D := ./Debug/01_MCAL/EXIT/ ./Debug/01_MCAL/GPIO/ ./Debug/01_MCAL/RCC/ ./Debug/01_MCAL/SPI/ ./Debug/01_MCAL/USART/ ./Debug/02_HAL/Keypad/ ./Debug/02_HAL/LCD/ ./Debug/ ./Startup/
+# makefile (from 'Makefile', line 106)
+OUT_BIN = $(DEBUG_DIR)/$(PRJ_Name).bin
+# environment
+_ = /cygdrive/e/Mastering Embedded System Diploma/Software/Microsoft VS Code/Code.exe
+# environment
+MOZ_PLUGIN_PATH = C:\PROGRAM FILES (X86)\plugins\
+# environment
+APPDATA = C:\Users\makra\AppData\Roaming
+# makefile (from 'Makefile', line 35)
+CFLAGS = -std=c89 -ansi 
+# makefile (from 'Makefile', line 16)
+DEBUG_DIR := ./Debug
+# environment
+HOMEDRIVE = C:
+ 
+# environment
+PROCESSOR_ARCHITECTURE = AMD64
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/makra
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+TEMP = /tmp
+# environment
+TERM = xterm-256color
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\560f25002718af0601d67fe3c8d4be45-1.68.1-main-sock
+# makefile (from 'Makefile', line 117)
+define AS_File_Rule
+$(1)%.o: %.s | $(AS_OBJ_DIRS)
+	@echo ''
+	@echo '--> Assemble' $$<
+	$(CC)as.exe $$(MCPU) $$(DEBUG) $$(WARR) $$< -o $$@ -MMD
+endef
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# makefile (from 'Makefile', line 110)
+define C_File_Rule
+$(1)%.o: %.c | $(C_OBJ_DIRS)
+	@echo ''
+	@echo '--> Complie' $$<
+	$(CC)gcc.exe -c $$(CFLAGS) $$(MCPU) $$(DEBUG) $$(INCS) $$(WARR) $$< -o $$@ -MMD
+endef
+# default
+SUFFIXES := 
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+ 
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# makefile (from 'Makefile', line 92)
+AS_SRC_DIRS = $(dir $(AS_SRC))
+# makefile (from 'Makefile', line 53)
+DEBUG = -gdwarf-2
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# environment
+PROCESSOR_REVISION = 8e0a
+# makefile (from 'Makefile', line 30)
+CC = arm-none-eabi-
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 142 Stepping 10, GenuineIntel
+# variable set hash-table stats:
+ 
+# Load=148/1024=14%, Rehash=0, Collisions=24/358=7%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# ./Src/01_MCAL/EXIT/Debug: could not be stat'd.
+# ./Src/02_HAL/LCD (device 1860823216, inode 1125899906928413): 4 files, no impossibilities.
+# ./Src (device 1860823216, inode 1125899906928391): 6 files, no impossibilities.
+# ./Src/01_MCAL/GPIO/Debug: could not be stat'd.
+# Debug/Startup (device 1860823216, inode 1125899906928473): 4 files, no impossibilities.
+# Debug/01_MCAL/USART (device 1860823216, inode 1125899906928469): 4 files, no impossibilities.
+# ./Src/01_MCAL/SPI (device 1860823216, inode 1407374883639018): 4 files, no impossibilities.
+# Debug/01_MCAL/SPI (device 1860823216, inode 1125899906928468): 4 files, no impossibilities.
+# ./Src/01_MCAL/GPIO (device 1860823216, inode 1125899906928397): 4 files, no impossibilities.
+# Debug/01_MCAL/RCC (device 1860823216, inode 1125899906928467): 4 files, no impossibilities.
+# ./Src/02_HAL/LCD/Debug: could not be stat'd.
+# Debug (device 1860823216, inode 1407374883639119): 11 files, no impossibilities.
+ 
+# Debug/01_MCAL/GPIO (device 1860823216, inode 1407374883639122): 4 files, no impossibilities.
+# ./Src/01_MCAL/USART (device 1860823216, inode 1125899906928405): 4 files, no impossibilities.
+# . (device 1860823216, inode 1125899906928354): 10 files, no impossibilities.
+# Debug/02_HAL/LCD (device 1860823216, inode 1125899906928472): 4 files, no impossibilities.
+# ./Src/01_MCAL/SPI/Debug: could not be stat'd.
+# ./Src/02_HAL/Keypad/Debug: could not be stat'd.
+# ./Src/01_MCAL/USART/Debug: could not be stat'd.
+# ./Src/Debug: could not be stat'd.
+# Debug/01_MCAL/EXIT (device 1860823216, inode 1407374883639121): 4 files, no impossibilities.
+# ./Startup/Debug: could not be stat'd.
+# ./Src/01_MCAL/RCC (device 1860823216, inode 1125899906928402): 4 files, no impossibilities.
+# ./Startup (device 1860823216, inode 1125899906928417): No files, no impossibilities so far.
+# ./Src/02_HAL/Keypad (device 1860823216, inode 1125899906928410): 4 files, no impossibilities.
+# ./Src/01_MCAL/EXIT (device 1860823216, inode 1125899906928394): 4 files, no impossibilities.
+# Debug/02_HAL/Keypad (device 1860823216, inode 1125899906928471): 4 files, no impossibilities.
+# ./Src/01_MCAL/RCC/Debug: could not be stat'd.
+
+# 87 files, no impossibilities in 28 directories.
+
+# Implicit Rules
+
+Debug/01_MCAL/EXIT/%.o: %.c | Debug/01_MCAL/EXIT/ Debug/01_MCAL/GPIO/ Debug/01_MCAL/RCC/ Debug/01_MCAL/SPI/ Debug/01_MCAL/USART/ Debug/02_HAL/Keypad/ Debug/02_HAL/LCD/ Debug/ Debug/Startup/
+#  recipe to execute (from 'Makefile', line 153):
+	@echo ''
+	@echo '--> Complie' $<
+	arm-none-eabi-gcc.exe -c $(CFLAGS) $(MCPU) $(DEBUG) $(INCS) $(WARR) $< -o $@ -MMD
+
+ 
+Debug/01_MCAL/GPIO/%.o: %.c | Debug/01_MCAL/EXIT/ Debug/01_MCAL/GPIO/ Debug/01_MCAL/RCC/ Debug/01_MCAL/SPI/ Debug/01_MCAL/USART/ Debug/02_HAL/Keypad/ Debug/02_HAL/LCD/ Debug/ Debug/Startup/
+#  recipe to execute (from 'Makefile', line 153):
+	@echo ''
+	@echo '--> Complie' $<
+	arm-none-eabi-gcc.exe -c $(CFLAGS) $(MCPU) $(DEBUG) $(INCS) $(WARR) $< -o $@ -MMD
+
+Debug/01_MCAL/RCC/%.o: %.c | Debug/01_MCAL/EXIT/ Debug/01_MCAL/GPIO/ Debug/01_MCAL/RCC/ Debug/01_MCAL/SPI/ Debug/01_MCAL/USART/ Debug/02_HAL/Keypad/ Debug/02_HAL/LCD/ Debug/ Debug/Startup/
+#  recipe to execute (from 'Makefile', line 153):
+	@echo ''
+	@echo '--> Complie' $<
+	arm-none-eabi-gcc.exe -c $(CFLAGS) $(MCPU) $(DEBUG) $(INCS) $(WARR) $< -o $@ -MMD
+
+Debug/01_MCAL/SPI/%.o: %.c | Debug/01_MCAL/EXIT/ Debug/01_MCAL/GPIO/ Debug/01_MCAL/RCC/ Debug/01_MCAL/SPI/ Debug/01_MCAL/USART/ Debug/02_HAL/Keypad/ Debug/02_HAL/LCD/ Debug/ Debug/Startup/
+#  recipe to execute (from 'Makefile', line 153):
+	@echo ''
+	@echo '--> Complie' $<
+	arm-none-eabi-gcc.exe -c $(CFLAGS) $(MCPU) $(DEBUG) $(INCS) $(WARR) $< -o $@ -MMD
+
+Debug/01_MCAL/USART/%.o: %.c | Debug/01_MCAL/EXIT/ Debug/01_MCAL/GPIO/ Debug/01_MCAL/RCC/ Debug/01_MCAL/SPI/ Debug/01_MCAL/USART/ Debug/02_HAL/Keypad/ Debug/02_HAL/LCD/ Debug/ Debug/Startup/
+#  recipe to execute (from 'Makefile', line 153):
+	@echo ''
+	@echo '--> Complie' $<
+	arm-none-eabi-gcc.exe -c $(CFLAGS) $(MCPU) $(DEBUG) $(INCS) $(WARR) $< -o $@ -MMD
+
+Debug/02_HAL/Keypad/%.o: %.c | Debug/01_MCAL/EXIT/ Debug/01_MCAL/GPIO/ Debug/01_MCAL/RCC/ Debug/01_MCAL/SPI/ Debug/01_MCAL/USART/ Debug/02_HAL/Keypad/ Debug/02_HAL/LCD/ Debug/ Debug/Startup/
+#  recipe to execute (from 'Makefile', line 153):
+	@echo ''
+	@echo '--> Complie' $<
+	arm-none-eabi-gcc.exe -c $(CFLAGS) $(MCPU) $(DEBUG) $(INCS) $(WARR) $< -o $@ -MMD
+
+Debug/02_HAL/LCD/%.o: %.c | Debug/01_MCAL/EXIT/ Debug/01_MCAL/GPIO/ Debug/01_MCAL/RCC/ Debug/01_MCAL/SPI/ Debug/01_MCAL/USART/ Debug/02_HAL/Keypad/ Debug/02_HAL/LCD/ Debug/ Debug/Startup/
+#  recipe to execute (from 'Makefile', line 153):
+	@echo ''
+	@echo '--> Complie' $<
+	arm-none-eabi-gcc.exe -c $(CFLAGS) $(MCPU) $(DEBUG) $(INCS) $(WARR) $< -o $@ -MMD
+
+Debug/%.o: %.c | Debug/01_MCAL/EXIT/ Debug/01_MCAL/GPIO/ Debug/01_MCAL/RCC/ Debug/01_MCAL/SPI/ Debug/01_MCAL/USART/ Debug/02_HAL/Keypad/ Debug/02_HAL/LCD/ Debug/ Debug/Startup/
+#  recipe to execute (from 'Makefile', line 153):
+	@echo ''
+	@echo '--> Complie' $<
+	arm-none-eabi-gcc.exe -c $(CFLAGS) $(MCPU) $(DEBUG) $(INCS) $(WARR) $< -o $@ -MMD
+
+Debug/Startup/%.o: %.c | Debug/01_MCAL/EXIT/ Debug/01_MCAL/GPIO/ Debug/01_MCAL/RCC/ Debug/01_MCAL/SPI/ Debug/01_MCAL/USART/ Debug/02_HAL/Keypad/ Debug/02_HAL/LCD/ Debug/ Debug/Startup/
+#  recipe to execute (from 'Makefile', line 153):
+	@echo ''
+	@echo '--> Complie' $<
+	arm-none-eabi-gcc.exe -c $(CFLAGS) $(MCPU) $(DEBUG) $(INCS) $(WARR) $< -o $@ -MMD
+
+# 9 implicit rules, 0 (0.0%) terminal.
+# Files
+
+# Not a target:
+Debug/01_MCAL/USART/stm32f103c6-usart.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-04 05:58:52.6188918
+#  File has been updated.
+#  Successfully updated.
+ 
+
+# 'override' directive
+Debug/MCU-SPI-Driver-Slave.elf: .SHELLSTATUS := 0
+Debug/MCU-SPI-Driver-Slave.elf: Debug/01_MCAL/EXIT/stm32f103c6-exti.o Debug/01_MCAL/GPIO/stm32f103c6-gpio.o Debug/01_MCAL/RCC/stm32f103c6-rcc.o Debug/01_MCAL/SPI/stm32f103c6-spi.o Debug/01_MCAL/USART/stm32f103c6-usart.o Debug/02_HAL/Keypad/keypad.o Debug/02_HAL/LCD/lcd.o Debug/main.o Debug/Startup/startup.o
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := Debug/MCU-SPI-Driver-Slave.elf
+# automatic
+# * := 
+# automatic
+# < := Debug/01_MCAL/EXIT/stm32f103c6-exti.o
+# automatic
+# + := Debug/01_MCAL/EXIT/stm32f103c6-exti.o Debug/01_MCAL/GPIO/stm32f103c6-gpio.o Debug/01_MCAL/RCC/stm32f103c6-rcc.o Debug/01_MCAL/SPI/stm32f103c6-spi.o Debug/01_MCAL/USART/stm32f103c6-usart.o Debug/02_HAL/Keypad/keypad.o Debug/02_HAL/LCD/lcd.o Debug/main.o Debug/Startup/startup.o
+# automatic
+# % := 
+# automatic
+# ^ := Debug/01_MCAL/EXIT/stm32f103c6-exti.o Debug/01_MCAL/GPIO/stm32f103c6-gpio.o Debug/01_MCAL/RCC/stm32f103c6-rcc.o Debug/01_MCAL/SPI/stm32f103c6-spi.o Debug/01_MCAL/USART/stm32f103c6-usart.o Debug/02_HAL/Keypad/keypad.o Debug/02_HAL/LCD/lcd.o Debug/main.o Debug/Startup/startup.o
+# automatic
+ 
+# ? := Debug/01_MCAL/EXIT/stm32f103c6-exti.o Debug/01_MCAL/GPIO/stm32f103c6-gpio.o Debug/01_MCAL/RCC/stm32f103c6-rcc.o Debug/01_MCAL/SPI/stm32f103c6-spi.o Debug/01_MCAL/USART/stm32f103c6-usart.o Debug/02_HAL/Keypad/keypad.o Debug/02_HAL/LCD/lcd.o Debug/main.o Debug/Startup/startup.o
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=9/32=28%, Rehash=0, Collisions=23/58=40%
+#  recipe to execute (from 'Makefile', line 143):
+	@echo ''
+	@echo '--> Linking' $(C_OBJ) $(AS_OBJ)
+	$(CC)ld.exe -T $(LINKER_SCR) $(C_OBJ) $(AS_OBJ) -o $@ -Map=$(OUT_MAP)
+	cp $(OUT_ELF) $(OUT_AXF)
+
+# Not a target:
+Debug/main.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-04 05:58:53.5236332
+#  File has been updated.
+#  Successfully updated.
+
+Debug/:
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-04 05:58:54.5828255
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 167):
+ 
+	@echo ''
+	@echo '--> Create Directory' $(C_OBJ_DIRS)
+	mkdir -p $(C_OBJ_DIRS)
+
+# Not a target:
+Src/01_MCAL/GPIO/stm32f103c6-gpio.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 21:18:28.4020175
+#  File has been updated.
+#  Successfully updated.
+
+Debug/01_MCAL/USART/stm32f103c6-usart.o: ./Src/01_MCAL/USART/stm32f103c6-usart.c Src/01_MCAL/USART/stm32f103c6-usart.c Src/01_MCAL/USART/stm32f103c6-usart.h Src/01_MCAL/Inc/stm32f103c6.h Src/01_MCAL/RCC/stm32f103c6-rcc.h Src/01_MCAL/GPIO/stm32f103c6-gpio.h | Debug/01_MCAL/EXIT/ Debug/01_MCAL/GPIO/ Debug/01_MCAL/RCC/ Debug/01_MCAL/SPI/ Debug/01_MCAL/USART/ Debug/02_HAL/Keypad/ Debug/02_HAL/LCD/ Debug/ Debug/Startup/
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'stm32f103c6-usart'
+#  Last modified 2022-07-04 05:58:52.6388035
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 153):
+	@echo ''
+	@echo '--> Complie' $<
+	arm-none-eabi-gcc.exe -c $(CFLAGS) $(MCPU) $(DEBUG) $(INCS) $(WARR) $< -o $@ -MMD
+
+# Not a target:
+Src/02_HAL/LCD/lcd.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-03 08:25:17.6698979
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Src/01_MCAL/Inc/stm32f103c6.h:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-06-29 12:07:22.4124518
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Src/01_MCAL/EXIT/stm32f103c6-exti.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 19:47:22.749133
+#  File has been updated.
+#  Successfully updated.
+
+Debug/Startup/startup.o: ./Startup/startup.c Startup/startup.c | Debug/01_MCAL/EXIT/ Debug/01_MCAL/GPIO/ Debug/01_MCAL/RCC/ Debug/01_MCAL/SPI/ Debug/01_MCAL/USART/ Debug/02_HAL/Keypad/ Debug/02_HAL/LCD/ Debug/ Debug/Startup/
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'startup'
+#  Last modified 2022-07-04 05:58:53.8447785
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 153):
+	@echo ''
+	@echo '--> Complie' $<
+	arm-none-eabi-gcc.exe -c $(CFLAGS) $(MCPU) $(DEBUG) $(INCS) $(WARR) $< -o $@ -MMD
+
+clean-all:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+ 
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 192):
+	@echo "==========================( CLEAN-ALL )==========================="
+	rm -rf $(OUT_ELF)
+	rm -rf $(OUT_BIN)
+	rm -rf $(OUT_MAP)
+	rm -rf $(C_OBJ) $(AS_OBJ)
+	rm -rf $(C_DEPS) $(AS_DEPS)
+	rm -rf $(C_OBJ_DIRS) $(AS_OBJ_DIRS)
+	rm -rf $(DEBUG_DIR)
+	@echo "======================( CLEAN-ALL IS DONE )======================="
+
+# Not a target:
+Src/02_HAL/LCD/lcd.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-01 21:52:10.28207
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Src/01_MCAL/SPI/stm32f103c6-spi.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-04 05:41:08.1690826
+#  File has been updated.
+#  Successfully updated.
+
+ 
+# Not a target:
+Src/01_MCAL/SPI/stm32f103c6-spi.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-04 05:39:59.5204569
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Src/01_MCAL/RCC/stm32f103c6-rcc.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-20 09:39:19.2182135
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-04 05:59:04.3022906
+#  File has been updated.
+#  Successfully updated.
+
+Debug/02_HAL/Keypad/:
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-04 05:58:52.9466306
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 167):
+ 
+	@echo ''
+	@echo '--> Create Directory' $(C_OBJ_DIRS)
+	mkdir -p $(C_OBJ_DIRS)
+
+Debug/01_MCAL/EXIT/:
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-04 05:58:51.4988803
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 167):
+	@echo ''
+	@echo '--> Create Directory' $(C_OBJ_DIRS)
+	mkdir -p $(C_OBJ_DIRS)
+
+# Not a target:
+Startup/startup.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 21:14:51.6394519
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+./Startup/startup.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-04 21:14:51.6394519
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ 
+./Src/01_MCAL/RCC/stm32f103c6-rcc.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-20 09:39:19.2182135
+#  File has been updated.
+#  Successfully updated.
+
+Debug/MCU-SPI-Driver-Slave.bin: Debug/MCU-SPI-Driver-Slave.elf
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/45=0%
+#  recipe to execute (from 'Makefile', line 135):
+	@echo ''
+	@echo '--> Strip' $<
+	$(CC)objcopy.exe -O binary $< $@
+
+# Not a target:
+Debug/01_MCAL/EXIT/stm32f103c6-exti.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-04 05:58:50.8401604
+ 
+#  File has been updated.
+#  Successfully updated.
+
+Debug/01_MCAL/RCC/:
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-04 05:58:52.0598172
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 167):
+	@echo ''
+	@echo '--> Create Directory' $(C_OBJ_DIRS)
+	mkdir -p $(C_OBJ_DIRS)
+
+Debug/01_MCAL/GPIO/stm32f103c6-gpio.o: ./Src/01_MCAL/GPIO/stm32f103c6-gpio.c Src/01_MCAL/GPIO/stm32f103c6-gpio.c Src/01_MCAL/GPIO/stm32f103c6-gpio.h Src/01_MCAL/Inc/stm32f103c6.h | Debug/01_MCAL/EXIT/ Debug/01_MCAL/GPIO/ Debug/01_MCAL/RCC/ Debug/01_MCAL/SPI/ Debug/01_MCAL/USART/ Debug/02_HAL/Keypad/ Debug/02_HAL/LCD/ Debug/ Debug/Startup/
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'stm32f103c6-gpio'
+#  Last modified 2022-07-04 05:58:51.7534646
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 153):
+	@echo ''
+	@echo '--> Complie' $<
+	arm-none-eabi-gcc.exe -c $(CFLAGS) $(MCPU) $(DEBUG) $(INCS) $(WARR) $< -o $@ -MMD
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 181):
+	@echo "============================( CLEAN )============================="
+	rm -rf $(OUT_ELF)
+	rm -rf $(OUT_BIN)
+	rm -rf $(OUT_MAP)
+	@echo "========================( CLEAN IS DONE )========================="
+
+Debug/01_MCAL/USART/:
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-04 05:58:52.6348129
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 167):
+	@echo ''
+	@echo '--> Create Directory' $(C_OBJ_DIRS)
+	mkdir -p $(C_OBJ_DIRS)
+ 
+
+Debug/02_HAL/Keypad/keypad.o: ./Src/02_HAL/Keypad/keypad.c Src/02_HAL/Keypad/keypad.c Src/02_HAL/Keypad/keypad.h Src/01_MCAL/GPIO/stm32f103c6-gpio.h Src/01_MCAL/Inc/stm32f103c6.h | Debug/01_MCAL/EXIT/ Debug/01_MCAL/GPIO/ Debug/01_MCAL/RCC/ Debug/01_MCAL/SPI/ Debug/01_MCAL/USART/ Debug/02_HAL/Keypad/ Debug/02_HAL/LCD/ Debug/ Debug/Startup/
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'keypad'
+#  Last modified 2022-07-04 05:58:52.9486249
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 153):
+	@echo ''
+	@echo '--> Complie' $<
+	arm-none-eabi-gcc.exe -c $(CFLAGS) $(MCPU) $(DEBUG) $(INCS) $(WARR) $< -o $@ -MMD
+
+# Not a target:
+Src/01_MCAL/USART/stm32f103c6-usart.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-29 06:36:31.1686322
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Src/main.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-04 05:58:29.2630734
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+./Src/01_MCAL/USART/stm32f103c6-usart.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-29 06:36:31.1686322
+#  File has been updated.
+#  Successfully updated.
+ 
+
+# Not a target:
+./Src/01_MCAL/SPI/stm32f103c6-spi.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-04 05:41:08.1690826
+#  File has been updated.
+#  Successfully updated.
+
+Debug/02_HAL/LCD/lcd.o: ./Src/02_HAL/LCD/lcd.c Src/02_HAL/LCD/lcd.c Src/02_HAL/LCD/lcd.h Src/01_MCAL/GPIO/stm32f103c6-gpio.h Src/01_MCAL/Inc/stm32f103c6.h | Debug/01_MCAL/EXIT/ Debug/01_MCAL/GPIO/ Debug/01_MCAL/RCC/ Debug/01_MCAL/SPI/ Debug/01_MCAL/USART/ Debug/02_HAL/Keypad/ Debug/02_HAL/LCD/ Debug/ Debug/Startup/
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'lcd'
+#  Last modified 2022-07-04 05:58:53.2817633
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 153):
+	@echo ''
+	@echo '--> Complie' $<
+	arm-none-eabi-gcc.exe -c $(CFLAGS) $(MCPU) $(DEBUG) $(INCS) $(WARR) $< -o $@ -MMD
+
+# Not a target:
+Debug/02_HAL/Keypad/keypad.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-04 05:58:52.9327037
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Src/01_MCAL/EXIT/stm32f103c6-exti.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 19:44:02.0411572
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+./Src/02_HAL/LCD/lcd.c:
+#  Implicit rule search has been done.
+ 
+#  Last modified 2022-06-03 08:25:17.6698979
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Debug/01_MCAL/SPI/stm32f103c6-spi.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-04 05:58:52.3178619
+#  File has been updated.
+#  Successfully updated.
+
+all: Debug/MCU-SPI-Driver-Slave.bin
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/45=0%
+#  recipe to execute (from 'Makefile', line 129):
+	@echo "========================( BUILD IS DONE )========================="
+
+show-variables:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 207):
+	@echo "========================( SHOW VARIABLES )========================"
+	@echo '--> PRJ_Name =' $(PRJ_Name)
+	@echo '--> CC =' $(CC)
+	@echo '--> CFLAGS =' $(CFLAGS)
+ 
+	@echo '--> MCPU =' $(MCPU)
+	@echo '--> DEBUG =' $(DEBUG)
+	@echo '--> WARR =' $(WARR)
+	@echo '--> LINKER_SCR =' $(LINKER_SCR)
+	@echo '--> INCS =' $(INCS)
+	@echo '--> LIBS =' $(LIBS)
+	@echo ''
+	@echo '--> C_SRC =' $(C_SRC)
+	@echo '--> C_SRC_DIRS =' $(C_SRC_DIRS)
+	@echo '--> C_OBJ_DIRS =' $(C_OBJ_DIRS)
+	@echo '--> C_OBJ =' $(C_OBJ)
+	@echo '--> C_DEPS =' $(C_DEPS)
+	@echo ''
+	@echo '--> AS_SRC =' $(AS_SRC)
+	@echo '--> AS_SRC_DIRS =' $(AS_SRC_DIRS)
+	@echo '--> AS_OBJ_DIRS =' $(AS_OBJ_DIRS)
+	@echo '--> AS_OBJ =' $(AS_OBJ)
+	@echo '--> AS_DEPS =' $(AS_DEPS)
+	@echo ''
+	@echo '--> VPATH =' $(VPATH)
+	@echo '--> OUT_ELF =' $(OUT_ELF)
+	@echo '--> OUT_BIN =' $(OUT_BIN)
+	@echo '--> OUT_MAP =' $(OUT_MAP)
+	@echo "====================( SHOW VARIABLES IS DONE )===================="
+
+# Not a target:
+Debug/01_MCAL/RCC/stm32f103c6-rcc.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-04 05:58:52.0449087
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Src/02_HAL/Keypad/keypad.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-01 19:12:37.7241267
+#  File has been updated.
+#  Successfully updated.
+
+ 
+# Not a target:
+Src/01_MCAL/GPIO/stm32f103c6-gpio.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-31 18:02:16.4408578
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Debug/01_MCAL/GPIO/stm32f103c6-gpio.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-04 05:58:51.7364281
+#  File has been updated.
+#  Successfully updated.
+
+Debug/01_MCAL/GPIO/:
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-04 05:58:51.7504383
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 167):
+	@echo ''
+	@echo '--> Create Directory' $(C_OBJ_DIRS)
+ 
+	mkdir -p $(C_OBJ_DIRS)
+
+# Not a target:
+Debug/02_HAL/LCD/lcd.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-04 05:58:53.2621294
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Src/01_MCAL/USART/stm32f103c6-usart.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-20 07:43:24.1187992
+#  File has been updated.
+#  Successfully updated.
+
+Debug/Startup/:
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-04 05:58:53.842781
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 167):
+	@echo ''
+	@echo '--> Create Directory' $(C_OBJ_DIRS)
+	mkdir -p $(C_OBJ_DIRS)
+
+ 
+Debug/02_HAL/LCD/:
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-04 05:58:53.2777389
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 167):
+	@echo ''
+	@echo '--> Create Directory' $(C_OBJ_DIRS)
+	mkdir -p $(C_OBJ_DIRS)
+
+# Not a target:
+Src/01_MCAL/RCC/stm32f103c6-rcc.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-20 09:41:41.462551
+#  File has been updated.
+#  Successfully updated.
+
+Debug/01_MCAL/SPI/stm32f103c6-spi.o: ./Src/01_MCAL/SPI/stm32f103c6-spi.c Src/01_MCAL/SPI/stm32f103c6-spi.c Src/01_MCAL/SPI/stm32f103c6-spi.h Src/01_MCAL/Inc/stm32f103c6.h Src/01_MCAL/GPIO/stm32f103c6-gpio.h | Debug/01_MCAL/EXIT/ Debug/01_MCAL/GPIO/ Debug/01_MCAL/RCC/ Debug/01_MCAL/SPI/ Debug/01_MCAL/USART/ Debug/02_HAL/Keypad/ Debug/02_HAL/LCD/ Debug/ Debug/Startup/
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'stm32f103c6-spi'
+#  Last modified 2022-07-04 05:58:52.3407367
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 153):
+	@echo ''
+	@echo '--> Complie' $<
+	arm-none-eabi-gcc.exe -c $(CFLAGS) $(MCPU) $(DEBUG) $(INCS) $(WARR) $< -o $@ -MMD
+
+# Not a target:
+./Src/02_HAL/Keypad/keypad.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-01 19:12:37.7241267
+#  File has been updated.
+#  Successfully updated.
+
+Debug/main.o: ./Src/main.c Src/main.c Src/02_HAL/LCD/lcd.h Src/01_MCAL/GPIO/stm32f103c6-gpio.h Src/01_MCAL/Inc/stm32f103c6.h Src/01_MCAL/USART/stm32f103c6-usart.h Src/01_MCAL/SPI/stm32f103c6-spi.h | Debug/01_MCAL/EXIT/ Debug/01_MCAL/GPIO/ Debug/01_MCAL/RCC/ Debug/01_MCAL/SPI/ Debug/01_MCAL/USART/ Debug/02_HAL/Keypad/ Debug/02_HAL/LCD/ Debug/ Debug/Startup/
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'main'
+#  Last modified 2022-07-04 05:58:53.5425969
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 153):
+	@echo ''
+	@echo '--> Complie' $<
+	arm-none-eabi-gcc.exe -c $(CFLAGS) $(MCPU) $(DEBUG) $(INCS) $(WARR) $< -o $@ -MMD
+ 
+
+# Not a target:
+Debug/Startup/startup.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-04 05:58:53.8269021
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+./Src/01_MCAL/EXIT/stm32f103c6-exti.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-06 19:44:02.0411572
+#  File has been updated.
+#  Successfully updated.
+
+.PHONY: all clean clean-all show-variables
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Src/02_HAL/Keypad/keypad.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-01 16:53:09.0549644
+#  File has been updated.
+#  Successfully updated.
+
+Debug/01_MCAL/SPI/:
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-04 05:58:52.337744
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 167):
+	@echo ''
+	@echo '--> Create Directory' $(C_OBJ_DIRS)
+	mkdir -p $(C_OBJ_DIRS)
+
+# Not a target:
+./Src/01_MCAL/GPIO/stm32f103c6-gpio.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-31 18:02:16.4408578
+#  File has been updated.
+#  Successfully updated.
+
+Debug/01_MCAL/RCC/stm32f103c6-rcc.o: ./Src/01_MCAL/RCC/stm32f103c6-rcc.c Src/01_MCAL/RCC/stm32f103c6-rcc.c Src/01_MCAL/RCC/stm32f103c6-rcc.h Src/01_MCAL/Inc/stm32f103c6.h | Debug/01_MCAL/EXIT/ Debug/01_MCAL/GPIO/ Debug/01_MCAL/RCC/ Debug/01_MCAL/SPI/ Debug/01_MCAL/USART/ Debug/02_HAL/Keypad/ Debug/02_HAL/LCD/ Debug/ Debug/Startup/
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'stm32f103c6-rcc'
+#  Last modified 2022-07-04 05:58:52.0618494
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 153):
+ 
+	@echo ''
+	@echo '--> Complie' $<
+	arm-none-eabi-gcc.exe -c $(CFLAGS) $(MCPU) $(DEBUG) $(INCS) $(WARR) $< -o $@ -MMD
+
+Debug/01_MCAL/EXIT/stm32f103c6-exti.o: ./Src/01_MCAL/EXIT/stm32f103c6-exti.c Src/01_MCAL/EXIT/stm32f103c6-exti.c Src/01_MCAL/EXIT/stm32f103c6-exti.h Src/01_MCAL/Inc/stm32f103c6.h Src/01_MCAL/GPIO/stm32f103c6-gpio.h | Debug/01_MCAL/EXIT/ Debug/01_MCAL/GPIO/ Debug/01_MCAL/RCC/ Debug/01_MCAL/SPI/ Debug/01_MCAL/USART/ Debug/02_HAL/Keypad/ Debug/02_HAL/LCD/ Debug/ Debug/Startup/
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'stm32f103c6-exti'
+#  Last modified 2022-07-04 05:58:51.5028693
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 153):
+	@echo ''
+	@echo '--> Complie' $<
+	arm-none-eabi-gcc.exe -c $(CFLAGS) $(MCPU) $(DEBUG) $(INCS) $(WARR) $< -o $@ -MMD
+
+# Not a target:
+./Src/main.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-04 05:58:29.2630734
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=63/1024=6%, Rehash=0, Collisions=20/485=4%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# General ('VPATH' variable) search path:
+# ./Src/01_MCAL/EXIT:./Src/01_MCAL/GPIO:./Src/01_MCAL/RCC:./Src/01_MCAL/SPI:./Src/01_MCAL/USART:./Src/02_HAL/Keypad:./Src/02_HAL/LCD:./Src:./Startup
+
+# strcache buffers: 1 (0) / strings = 160 / storage = 3095 B / avg = 19 B
+# current buf: size = 8162 B / used = 3095 B / count = 160 / avg = 19 B
+
+# strcache performance: lookups = 562 / hit rate = 71%
+# hash-table stats:
+ 
+# Load=160/8192=2%, Rehash=0, Collisions=4/562=1%
+# Finished Make data base on Mon Jul  4 05:59:06 2022
+
+ 
