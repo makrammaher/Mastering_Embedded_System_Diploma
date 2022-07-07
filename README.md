@@ -43,7 +43,7 @@
    3. [USART 2](07_MCU_Interfacing/03_UART_02)
    4. [SPI 1](07_MCU_Interfacing/04_SPI_01)
    5. [SPI 2](07_MCU_Interfacing/05_SPI_02)
-   6. I2C 1
+   6. [I2C 1](07_MCU_Interfacing/06_I2C_01)
    7. I2C 2
 4. MCU Timers / ADC ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 5. SW Engineering ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
