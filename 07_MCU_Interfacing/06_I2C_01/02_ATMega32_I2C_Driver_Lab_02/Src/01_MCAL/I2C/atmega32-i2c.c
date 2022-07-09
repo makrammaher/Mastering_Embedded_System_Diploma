@@ -215,3 +215,11 @@ uint8_t I2C_Receive_Data(uint8_t Polling_Enable)
     data = TWDR;
     return data;
 }
+
+/* I2C I2C_vect */
+void __vector_19(void) __attribute__((signal, used, externally_visible));
+
+void __vector_19(void)
+{
+    GP_I2C_IRQ_CallBack();
+}

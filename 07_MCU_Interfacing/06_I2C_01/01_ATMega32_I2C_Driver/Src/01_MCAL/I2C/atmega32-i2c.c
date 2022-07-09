@@ -87,7 +87,7 @@ void I2C_Clear_TWINT_Flag(void)
  */
 void I2C_Enable_ACK(void)
 {
-    TWCR |= (1 << 6);
+    TWCR = (TWCR | (1 << 6)) & 0x7F;
 }
 
 /**
@@ -96,7 +96,7 @@ void I2C_Enable_ACK(void)
  */
 void I2C_Disable_ACK(void)
 {
-    TWCR &= ~(1 << 6);
+    TWCR = (TWCR & (~(1 << 6))) & 0x7F;
 }
 
 /**
@@ -204,6 +204,8 @@ void I2C_Send_Data(uint8_t Data, uint8_t Polling_Enable)
 uint8_t I2C_Receive_Data(uint8_t Polling_Enable)
 {
     uint8_t data;
+    TWCR &= 0x4F;
+    I2C_CLEAR_TWINT();
     /* Polling on the flag if you need */
     if (Polling_Enable == I2C_POLLING_ENABLE)
     {
@@ -211,7 +213,13 @@ uint8_t I2C_Receive_Data(uint8_t Polling_Enable)
             ;
     }
     data = TWDR;
-    TWCR &= 0x4F;
-    I2C_CLEAR_TWINT();
     return data;
+}
+
+/* I2C I2C_vect */
+void __vector_19(void) __attribute__((signal, used, externally_visible));
+
+void __vector_19(void)
+{
+    GP_I2C_IRQ_CallBack();
 }
