@@ -26,7 +26,7 @@
     2. [Student Management Information System](04_First_Term_Projects/02_Student_Database)
 
 ---
-### **Second Term** ![image](https://progress-bar.dev/60/?title=In_Progress&color=daa520)
+### **Second Term** ![image](https://progress-bar.dev/80/?title=In_Progress&color=daa520)
 1. [MCU Architecture](05_MCU_Architecture) ![image](https://progress-bar.dev/100/?title=Done)
     1. MCU Fundamentals 1
     2. MCU Fundamentals 2
@@ -37,15 +37,15 @@
     2. [GPIO 2](06_MCU_Essential_Peripherals/02_GPIO_02)
     3. [GPIO 3](06_MCU_Essential_Peripherals/03_GPIO_03)
     4. [EXTI](06_MCU_Essential_Peripherals/04_EXTI)
-3. MCU Interfacing ![image](https://progress-bar.dev/75/?title=In_Progress&color=daa520)
+3. [MCU Interfacing](07_MCU_Interfacing) ![image](https://progress-bar.dev/100/?title=Done)
    1. Electrical Characteristics
    2. [USART 1](07_MCU_Interfacing/02_UART_01)
    3. [USART 2](07_MCU_Interfacing/03_UART_02)
    4. [SPI 1](07_MCU_Interfacing/04_SPI_01)
    5. [SPI 2](07_MCU_Interfacing/05_SPI_02)
    6. [I2C 1](07_MCU_Interfacing/06_I2C_01)
-   7. I2C 2
-4. MCU Timers / ADC ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
+   7. [I2C 2](07_MCU_Interfacing/07_I2C_02)
+4. MCU Timers / ADC ![image](https://progress-bar.dev/10/?title=In_Progress&color=daa520)
 5. SW Engineering ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 ---
 ### **Third Term** ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
@@ -56,7 +56,7 @@
 **Term** |**Progress**
 -|-
 **First Term**|![image](https://progress-bar.dev/100/?title=Done)
-**Second Term**|![image](https://progress-bar.dev/60/?title=In_Progress&color=daa520)
+**Second Term**|![image](https://progress-bar.dev/80/?title=In_Progress&color=daa520)
 **Third Term**|![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 
 
