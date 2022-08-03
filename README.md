@@ -26,7 +26,7 @@
     2. [Student Management Information System](04_First_Term_Projects/02_Student_Database)
 
 ---
-### **Second Term** ![image](https://progress-bar.dev/85/?title=In_Progress&color=daa520)
+### **Second Term** ![image](https://progress-bar.dev/92/?title=In_Progress&color=daa520)
 1. [MCU Architecture](05_MCU_Architecture) ![image](https://progress-bar.dev/100/?title=Done)
     1. MCU Fundamentals 1
     2. MCU Fundamentals 2
@@ -45,10 +45,10 @@
    5. [SPI 2](07_MCU_Interfacing/05_SPI_02)
    6. [I2C 1](07_MCU_Interfacing/06_I2C_01)
    7. [I2C 2](07_MCU_Interfacing/07_I2C_02)
-4. [MCU Timers / ADC](08_MCU_Timers_ADC) ![image](https://progress-bar.dev/60/?title=In_Progress&color=daa520)
+4. [MCU Timers / ADC](08_MCU_Timers_ADC) ![image](https://progress-bar.dev/100/?title=Done)
    1. [Timers](08_MCU_Timers_ADC/01_Timers)
    2. [ADC](08_MCU_Timers_ADC/02_ADC)
-5. SW Engineering ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
+5. SW Engineering ![image](https://progress-bar.dev/10/?title=In_Progress&color=daa520)
 ---
 ### **Third Term** ![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 
@@ -58,7 +58,7 @@
 **Term** |**Progress**
 -|-
 **First Term**|![image](https://progress-bar.dev/100/?title=Done)
-**Second Term**|![image](https://progress-bar.dev/85/?title=In_Progress&color=daa520)
+**Second Term**|![image](https://progress-bar.dev/92/?title=In_Progress&color=daa520)
 **Third Term**|![image](https://progress-bar.dev/0/?title=To-do&color=ff0000)
 
 
